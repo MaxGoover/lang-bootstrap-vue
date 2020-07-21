@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14bb7e73-18d6-41de-8209-e7b40ad97b8b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/i18n/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/i18n/messages/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/i18n/messages/modules/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/locales/ru.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -45,6 +50,12 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
       <list>
@@ -69,7 +80,7 @@
       <updated>1595361966563</updated>
       <workItem from="1595361967955" duration="4005000" />
       <workItem from="1595366914928" duration="1811000" />
-      <workItem from="1595369043339" duration="775000" />
+      <workItem from="1595369043339" duration="1673000" />
     </task>
     <task id="LOCAL-00001" summary="Init application">
       <created>1595362054297</created>
@@ -92,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595369337150</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Installed advanced template">
+      <created>1595369845585</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1595369845585</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,21 +133,22 @@
     <MESSAGE value="Init application" />
     <MESSAGE value="Installed bootstrap-vue" />
     <MESSAGE value="Changed package.json for advanced template" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed package.json for advanced template" />
+    <MESSAGE value="Installed advanced template" />
+    <option name="LAST_COMMIT_MESSAGE" value="Installed advanced template" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="217" y="27" width="988" height="741" key="CommitChangelistDialog2" timestamp="1595369336931">
+    <state x="217" y="27" width="988" height="741" key="CommitChangelistDialog2" timestamp="1595369845323">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="217" y="27" width="988" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1595369336931" />
+    <state x="217" y="27" width="988" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1595369845323" />
     <state x="499" y="155" width="424" height="484" key="FileChooserDialogImpl" timestamp="1595368690873">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="499" y="155" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1595368690873" />
-    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1595369341216">
+    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1595369848899">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1299.741@67.27.1299.741" timestamp="1595369341216" />
+    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1299.741@67.27.1299.741" timestamp="1595369848899" />
     <state x="357" y="191" width="709" height="413" key="git4idea.merge.GitPullDialog" timestamp="1595366769318">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
