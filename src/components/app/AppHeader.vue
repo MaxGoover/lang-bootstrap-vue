@@ -3,9 +3,9 @@
     <!--Логотип-->
     <b-navbar-brand href="#">
       <img
-        alt="Kitten"
+        alt="logo"
         class="ml-3"
-        src="https://picsum.photos/34/34"
+        src="../../../public/boot_32.png"
       >
       <span class="ml-3">{{ $t('app.name') }}</span>
     </b-navbar-brand>
