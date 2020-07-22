@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14bb7e73-18d6-41de-8209-e7b40ad97b8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/modules/app/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/modules/auth/authorization.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/modules/grammar/grammar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/modules/training/training.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/modules/user/user.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/About.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Home.vue" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +79,7 @@
       <workItem from="1595361967955" duration="4005000" />
       <workItem from="1595366914928" duration="1811000" />
       <workItem from="1595369043339" duration="3055000" />
-      <workItem from="1595410079592" duration="1840000" />
+      <workItem from="1595410079592" duration="2160000" />
     </task>
     <task id="LOCAL-00001" summary="Init application">
       <created>1595362054297</created>
@@ -127,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595410779218</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added module store">
+      <created>1595411948837</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1595411948837</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,21 +156,22 @@
     <MESSAGE value="Installed advanced template" />
     <MESSAGE value="Fixed i18n errors" />
     <MESSAGE value="Installed bootstrap vue" />
-    <option name="LAST_COMMIT_MESSAGE" value="Installed bootstrap vue" />
+    <MESSAGE value="Added module store" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added module store" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="217" y="27" width="988" height="741" key="CommitChangelistDialog2" timestamp="1595410778787">
+    <state x="217" y="27" width="988" height="741" key="CommitChangelistDialog2" timestamp="1595411948663">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="217" y="27" width="988" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1595410778787" />
+    <state x="217" y="27" width="988" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1595411948663" />
     <state x="499" y="155" width="424" height="484" key="FileChooserDialogImpl" timestamp="1595368690873">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="499" y="155" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1595368690873" />
-    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1595410783910">
+    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1595411952564">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1299.741@67.27.1299.741" timestamp="1595410783910" />
+    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1299.741@67.27.1299.741" timestamp="1595411952564" />
     <state x="357" y="191" width="709" height="413" key="git4idea.merge.GitPullDialog" timestamp="1595366769318">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
