@@ -1,15 +1,10 @@
 import './registerServiceWorker'
 import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
 import App from './App.vue'
 import router from './router/index'
 import store from './store/index'
 import Vue from 'vue'
-import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import { i18n } from './i18n/index'
-
-Vue.use(BootstrapVue)
-Vue.use(IconsPlugin)
 
 Vue.config.productionTip = false
 

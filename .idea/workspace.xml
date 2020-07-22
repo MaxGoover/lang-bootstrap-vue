@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14bb7e73-18d6-41de-8209-e7b40ad97b8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/views/Main.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +92,7 @@
       <workItem from="1595366914928" duration="1811000" />
       <workItem from="1595369043339" duration="3055000" />
       <workItem from="1595410079592" duration="17313000" />
-      <workItem from="1595446122865" duration="2280000" />
+      <workItem from="1595446122865" duration="2522000" />
     </task>
     <task id="LOCAL-00001" summary="Init application">
       <created>1595362054297</created>
@@ -186,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595441549319</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Bad commit">
+      <created>1595450375303</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1595450375303</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,13 +225,14 @@
     <MESSAGE value="Added logo and styles for appheader" />
     <MESSAGE value="Good styles for app header" />
     <MESSAGE value="Chaged logo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Chaged logo" />
+    <MESSAGE value="Bad commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bad commit" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="217" y="27" width="988" height="741" key="CommitChangelistDialog2" timestamp="1595441549144">
+    <state x="217" y="27" width="988" height="741" key="CommitChangelistDialog2" timestamp="1595450374556">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="217" y="27" width="988" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1595441549144" />
+    <state x="217" y="27" width="988" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1595450374556" />
     <state x="167" y="125" width="1099" height="543" key="DiffContextDialog" timestamp="1595450344531">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -234,10 +241,10 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="499" y="155" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1595446492483" />
-    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1595441553203">
+    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1595450379607">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1299.741@67.27.1299.741" timestamp="1595441553203" />
+    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1299.741@67.27.1299.741" timestamp="1595450379607" />
     <state x="362" y="132" width="709" height="528" key="find.popup" timestamp="1595421175046">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
