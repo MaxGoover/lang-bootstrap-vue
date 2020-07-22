@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="14bb7e73-18d6-41de-8209-e7b40ad97b8b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HelloWorld.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/About.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Home.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +76,7 @@
       <workItem from="1595361967955" duration="4005000" />
       <workItem from="1595366914928" duration="1811000" />
       <workItem from="1595369043339" duration="3055000" />
-      <workItem from="1595410079592" duration="2160000" />
+      <workItem from="1595410079592" duration="3611000" />
     </task>
     <task id="LOCAL-00001" summary="Init application">
       <created>1595362054297</created>
@@ -130,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595411948837</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added module router">
+      <created>1595412428862</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1595412428862</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,13 +161,14 @@
     <MESSAGE value="Fixed i18n errors" />
     <MESSAGE value="Installed bootstrap vue" />
     <MESSAGE value="Added module store" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added module store" />
+    <MESSAGE value="Added module router" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added module router" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="217" y="27" width="988" height="741" key="CommitChangelistDialog2" timestamp="1595411948663">
+    <state x="217" y="27" width="988" height="741" key="CommitChangelistDialog2" timestamp="1595412428693">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="217" y="27" width="988" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1595411948663" />
+    <state x="217" y="27" width="988" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1595412428693" />
     <state x="499" y="155" width="424" height="484" key="FileChooserDialogImpl" timestamp="1595368690873">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
