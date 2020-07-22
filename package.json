@@ -3,14 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "i18n:report": "vue-cli-service i18n:report --src './src/**/*.?(js|vue)' --locales './src/locales/**/*.json'",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit",
-    "i18n:report": "vue-cli-service i18n:report --src './src/**/*.?(js|vue)' --locales './src/locales/**/*.json'"
+    "test:unit:watch": "vue-cli-service test:unit --watchAll",
+    "serve": "vue-cli-service serve"
   },
   "dependencies": {
     "axios": "^0.19.2",
+    "bootstrap": "^4.5.0",
+    "bootstrap-vue": "^2.15.0",
     "core-js": "^3.6.5",
     "register-service-worker": "^1.7.1",
     "roboto-fontface": "*",
