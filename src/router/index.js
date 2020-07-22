@@ -5,11 +5,11 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
 const routes = [
-  // {
-  //   path: '/',
-  //   name: 'Main',
-  //   component: () => import('../views/Main.vue')
-  // },
+  {
+    path: '/',
+    name: 'Main',
+    component: () => import('../views/Main.vue')
+  },
   // {
   //   path: '/reading',
   //   name: 'Reading',
@@ -73,8 +73,8 @@ router.beforeEach((to, from, next) => {
   }
 })
 
-function authGuard (to, from, next) {
-  store.getters['authorization/isAuthorized'] ? next() : next({ name: 'Login' })
-}
+// function authGuard (to, from, next) {
+//   store.getters['authorization/isAuthorized'] ? next() : next({ name: 'Login' })
+// }
 
 export default router
