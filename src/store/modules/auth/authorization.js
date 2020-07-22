@@ -68,7 +68,7 @@ export default {
 
       axios.post('auth/auth/logout')
         .then(
-          response => {
+          () => {
             // Удаление данных о пользователе
             this.dispatch('user/clearUser')
 

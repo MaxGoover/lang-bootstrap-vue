@@ -1,9 +1,7 @@
-/**
- * Возвращает данные о пользователе из localStorage.
- */
+
 const getUserFromLocalStorage = () => {
   let user = {}
-  try { user = JSON.parse(localStorage.getItem('user')) } catch (e) {}
+  user = JSON.parse(localStorage.getItem('user'))
   return user
 }
 
