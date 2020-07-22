@@ -1,13 +1,17 @@
 .navbar {
+    background-color: #fff;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, .35);
     font-family: 'Sans', Helvetica, Arial, sans-serif;
 }
 .navbar .navbar-brand {
     color: #0654c9;
     font-weight: 600;
-    line-height: 18px;
+    min-height: 32px;
 }
 .navbar .navbar-brand img {
     border-radius: 100%;
 }
-
+.navbar .navbar-nav .nav-link {
+    color: #37383c;
+    font-size: 16px;
+}

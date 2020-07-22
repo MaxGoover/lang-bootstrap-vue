@@ -13,16 +13,13 @@
 
     <!--Элементы меню-->
     <b-collapse id="nav-collapse" is-nav>
-      <b-navbar-nav class="ml-auto" right>
+      <b-navbar-nav class="ml-5">
+        <b-nav-item href="#">Тренировки</b-nav-item>
+        <b-nav-item href="#" disabled>Чтение</b-nav-item>
+      </b-navbar-nav>
 
-        <b-nav-item href="#" disabled>Sign In</b-nav-item>
-        <b-nav-item href="#">Sign Up</b-nav-item>
-
-        <b-nav-item-dropdown>
-          <!-- Using 'button-content' slot -->
-          <template v-slot:button-content>
-            <em>User</em>
-          </template>
+      <b-navbar-nav class="ml-auto" >
+        <b-nav-item-dropdown text="User" right>
           <b-dropdown-item href="#">Profile</b-dropdown-item>
           <b-dropdown-item href="#">Sign Out</b-dropdown-item>
         </b-nav-item-dropdown>
