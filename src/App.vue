@@ -1,9 +1,12 @@
 <template>
   <div id="app">
     <!--Хеадер-->
-    <app-header v-if="showHeader"/>
+    <app-header v-if="showAppHeader"/>
 
     <router-view/>
+
+    <!--Футер-->
+    <app-footer v-if="showAppFooter"/>
   </div>
 </template>
 
@@ -13,9 +16,15 @@ import { mapState } from 'vuex'
 export default {
   name: 'App',
   components: {
-    AppHeader: () => import('./components/app/AppHeader')
+    AppHeader: () => import('./components/app/AppHeader'),
+    AppFooter: () => import('./components/app/AppFooter')
   },
-  computed: { ...mapState('app', ['showHeader']) }
+  computed: {
+    ...mapState('app', [
+      'showAppHeader',
+      'showAppFooter'
+    ])
+  }
 }
 </script>
 

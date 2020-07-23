@@ -2,15 +2,19 @@ export default {
   namespaced: true,
   state: {
     loading: false,
-    showHeader: true,
+    showAppHeader: true,
+    showAppFooter: true,
     showDialog: false
   },
   getters: {
     showDialog: state => state.showDialog
   },
   mutations: {
-    setShowHeader (state, payload) {
+    setShowAppHeader (state, payload) {
       state.showAppHeader = payload
+    },
+    setShowAppFooter (state, payload) {
+      state.showAppFooter = payload
     },
     setShowDialog (state, payload) {
       state.showDialog = payload
