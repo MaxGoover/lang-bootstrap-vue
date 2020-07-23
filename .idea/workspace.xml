@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14bb7e73-18d6-41de-8209-e7b40ad97b8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/app/AppFooter.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/modules/app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/modules/app/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/components/app/AppHeader.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/components/app/AppHeader.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/app/AppFooter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/AppFooter.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/app/AppHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/AppHeader.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Main.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Main.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +59,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/app" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Загрузки/bootstrap-4.5.0-examples/dashboard/index.html" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
@@ -103,7 +105,7 @@
       <workItem from="1595369043339" duration="3055000" />
       <workItem from="1595410079592" duration="17313000" />
       <workItem from="1595446122865" duration="13383000" />
-      <workItem from="1595497397796" duration="634000" />
+      <workItem from="1595497397796" duration="8854000" />
     </task>
     <task id="LOCAL-00001" summary="Init application">
       <created>1595362054297</created>
@@ -231,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595497564784</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Added footer">
+      <created>1595498279795</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1595498279795</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,29 +278,30 @@
     <MESSAGE value="Fixed errors" />
     <MESSAGE value="Fixed styles for appheader bootstrap" />
     <MESSAGE value="Changed favicon.ico" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed favicon.ico" />
+    <MESSAGE value="Added footer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added footer" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="217" y="27" width="988" height="741" key="CommitChangelistDialog2" timestamp="1595497564530">
+    <state x="217" y="27" width="988" height="741" key="CommitChangelistDialog2" timestamp="1595498279599">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="217" y="27" width="988" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1595497564530" />
+    <state x="217" y="27" width="988" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1595498279599" />
     <state x="167" y="125" width="1099" height="543" key="DiffContextDialog" timestamp="1595450344531">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="167" y="125" width="1099" height="543" key="DiffContextDialog/67.27.1299.741@67.27.1299.741" timestamp="1595450344531" />
-    <state x="499" y="155" width="424" height="484" key="FileChooserDialogImpl" timestamp="1595446492483">
+    <state x="499" y="155" width="424" height="484" key="FileChooserDialogImpl" timestamp="1595511852281">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="499" y="155" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1595446492483" />
+    <state x="499" y="155" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1595511852281" />
     <state x="75" y="27" key="SettingsEditor" timestamp="1595497750373">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="75" y="27" key="SettingsEditor/67.27.1299.741@67.27.1299.741" timestamp="1595497750373" />
-    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1595497569345">
+    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1595498283536">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1299.741@67.27.1299.741" timestamp="1595497569345" />
+    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1299.741@67.27.1299.741" timestamp="1595498283536" />
     <state x="362" y="132" width="709" height="528" key="find.popup" timestamp="1595498101268">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -300,5 +310,9 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="357" y="191" width="709" height="413" key="git4idea.merge.GitPullDialog/67.27.1299.741@67.27.1299.741" timestamp="1595366769318" />
+    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1595498755831">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup/67.27.1299.741@67.27.1299.741" timestamp="1595498755831" />
   </component>
 </project>
