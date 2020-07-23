@@ -1,19 +1,17 @@
 .navbar {
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, .35);
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    height: 65px;
     position: fixed;
     width: 100%;
     z-index: 10;
 }
 .navbar .navbar-brand {
-    color: #0654c9;
+    color: #b06006;
     font-weight: 700;
 }
-.navbar .navbar-brand img {
-    border-radius: 100%;
-}
 .navbar-nav .active > .nav-link {
-    background-color: #0654c9;
+    background-color: #b06006;
     border-radius: 30px;
     color: #fff;
     padding: 5px 10px;
@@ -22,3 +20,7 @@
     color: rgb(55, 56, 60);
     font-weight: 600;
 }
+.void {
+    height: 65px;
+}
+/* hover f7e9da */

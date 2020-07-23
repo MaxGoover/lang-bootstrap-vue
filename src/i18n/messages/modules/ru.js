@@ -3,15 +3,11 @@ export default {
     name: 'Lang-bootstrap'
   },
   appHeader: {
-    grammar: 'Грамматика',
-    learnWords: 'Учить слова',
     login: 'Войти',
     logout: 'Выйти',
     main: 'Главная',
-    myCabinet: 'Мой кабинет',
-    reading: 'Чтение',
     signup: 'Зарегистрироваться',
-    video: 'Видео'
+    trainings: 'Тренировки'
   },
   common: {
     no: 'Нет',
@@ -26,21 +22,11 @@ export default {
     pageNotFound: 'Страница не найдена',
     tryFollowingPages: 'Попробуйте перейти на одну из следующих страниц:'
   },
-  img: {
-    img1: '/img/kitty.png'
-  },
   menu: {
     back: 'Назад',
     main: 'Главная'
   },
-  pageBooks: {
-    goTo: 'Перейти',
-    level: 'Уровень',
-    load: 'Загрузить',
-    open: 'Открыть',
-    parts: 'частей',
-    search: 'Поиск'
-  },
+  pageTrainings: {},
   pageSign: {
     authorization: 'Авторизация',
     password: 'Пароль',

@@ -23,19 +23,19 @@ const routes = [
   //   component: () => import('../components/books/Book'),
   //   beforeEnter: authGuard
   // },
-  // {
-  //   path: '/grammar',
-  //   name: 'Grammar',
-  //   component: () => import('../views/Grammar.vue'),
-  //   beforeEnter: authGuard
-  // },
-  // {
-  //   path: '/grammar/:alias',
-  //   name: 'GrammarTraining',
-  //   props: true,
-  //   component: () => import('../components/grammar/GrammarTraining.vue'),
-  //   beforeEnter: authGuard
-  // },
+  {
+    path: '/trainings',
+    name: 'Trainings',
+    component: () => import('../views/Grammar.vue'),
+    beforeEnter: authGuard
+  },
+  {
+    path: '/trainings/:type',
+    name: 'Trainings',
+    props: true,
+    component: () => import('../components/grammar/GrammarTraining.vue'),
+    beforeEnter: authGuard
+  },
   // {
   //   path: '/login',
   //   name: 'Login',
@@ -73,8 +73,8 @@ router.beforeEach((to, from, next) => {
   }
 })
 
-// function authGuard (to, from, next) {
-//   store.getters['authorization/isAuthorized'] ? next() : next({ name: 'Login' })
-// }
+function authGuard (to, from, next) {
+  store.getters['authorization/isAuthorized'] ? next() : next({ name: 'Login' })
+}
 
 export default router

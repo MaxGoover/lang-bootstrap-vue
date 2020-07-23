@@ -5,9 +5,7 @@
         <div class="row">
           <div class="col">
             <span>
-              &copy; 2020 Written with
-              <i class="fa fa-heart" style="color: red"/>
-              by Maxim Zaharov
+              &copy; 2020 Written with<i class="fa fa-heart"/>by Maxim Zaharov
             </span>
           </div>
         </div>

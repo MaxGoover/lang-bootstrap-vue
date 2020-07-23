@@ -3,42 +3,35 @@
     <nav class="navbar navbar-expand-md bg-light">
       <!--Логотип-->
       <a class="navbar-brand ml-2 ml-sm-3" href="#">
-        <img
-          alt="logo"
-          height="35"
-          src="../../../public/boot_32.png"
-          width="35"
-        >
-        {{ $t('app.name') }}
+        <i class="fa fa-ribbon" aria-hidden="true" style="font-size: 26px"/>
+        <span class="ml-3">{{ $t('app.name') }}</span>
       </a>
 
-      <!--Икнока меню-->
+      <!--Иконка меню-->
       <button
-        class="navbar-toggler" type="button" data-toggle="collapse"
+        class="navbar-toggler"
+        type="button"
         aria-controls="navbar"
         aria-expanded="false"
         aria-label="Toggle navigation"
         data-target="#navbar"
+        data-toggle="collapse"
       >
-        <i class="fas fa-bars"/>
+        <i class="fa fa-bars" aria-hidden="true"/>
       </button>
 
       <!--Элементы меню-->
       <div class="collapse navbar-collapse" id="navbar">
         <ul class="navbar-nav">
-          <li class="nav-item ml-3 my-auto">
-            <a class="nav-link" href="#">Тренировки</a>
-          </li>
-          <li class="nav-item ml-3">
-            <a
-              class="nav-link disabled"
-              href="#"
-              tabindex="-1"
-              aria-disabled="true"
-            >
-              Disabled
-            </a>
-          </li>
+          <router-link
+            v-for="(item, i) in menuItems"
+            :key="i"
+            :to="item.route"
+          >
+            <li class="nav-item ml-3 my-auto">
+              <a class="nav-link">{{ item.title }}</a>
+            </li>
+          </router-link>
         </ul>
 
         <!--Профиль пользователя-->
@@ -64,69 +57,53 @@
 </template>
 
 <script>
-    import {mapState} from 'vuex'
-    // import DialogWindow from '../../components/menu/DialogWindow'
-    // import MenuItem from '../../entities/MenuItem'
+import { mapState } from 'vuex'
+// import DialogWindow from '../../components/menu/DialogWindow'
+import MenuItem from '../../entities/MenuItem'
 
-    export default {
-        name: 'AppHeader',
-        components: {
-            // DialogWindow
-        },
-        data() {
-            return {toggleDrawer: false}
-        },
-        computed: {
-            ...mapState('authorization', ['isAuthorized']),
-            ...mapState('general', ['loading']),
-            menuItems() {
-                return this.isAuthorized ? [
-                    // new MenuItem(
-                    //   'mdi-eye',
-                    //   this.$i18n.t('appHeader.reading'),
-                    //   { name: 'Reading' }
-                    // ),
-                    // new MenuItem(
-                    //   'mdi-eye',
-                    //   this.$i18n.t('appHeader.video'),
-                    //   { name: 'Video' }
-                    // ),
-                    // new MenuItem(
-                    //   'mdi-account-edit',
-                    //   this.$i18n.t('appHeader.grammar'),
-                    //   { name: 'Grammar' }
-                    // ),
-                    // new MenuItem(
-                    //   'mdi-logout',
-                    //   this.$i18n.t('appHeader.logout'),
-                    //   null,
-                    //   this.showDialog
-                    // )
-                ] : [
-                    // new MenuItem(
-                    //   'mdi-login',
-                    //   this.$i18n.t('appHeader.login'),
-                    //   { name: 'Login' }
-                    // ),
-                    // new MenuItem(
-                    //   'mdi-lock-open',
-                    //   this.$i18n.t('appHeader.signup'),
-                    //   { name: 'Signup' }
-                    // )
-                ]
-            }
-        },
-        methods: {
-            showDialog() {
-                this.$store.commit('menu/setShowDialog', true)
-            }
-        }
+export default {
+  name: 'AppHeader',
+  components: {
+    // DialogWindow
+  },
+  computed: {
+    ...mapState('app', ['loading']),
+    ...mapState('authorization', ['isAuthorized']),
+    menuItems() {
+      return this.isAuthorized ? [
+        new MenuItem(
+          'mdi-account-edit',
+          this.$i18n.t('appHeader.trainings'),
+          { name: 'Grammar' }
+        ),
+        new MenuItem(
+          'mdi-logout',
+          this.$i18n.t('appHeader.logout'),
+          null,
+          this.showDialog
+        )
+      ] : [
+        new MenuItem(
+          'mdi-login',
+          this.$i18n.t('appHeader.login'),
+          { name: 'Login' }
+        ),
+        new MenuItem(
+          'mdi-lock-open',
+          this.$i18n.t('appHeader.signup'),
+          { name: 'Signup' }
+        )
+      ]
     }
+  }
+  // methods: {
+  //   showDialog() {
+  //     this.$store.commit('menu/setShowDialog', true)
+  //   }
+  // }
+}
 </script>
 
 <style scoped>
-  @import '../../assets/components/app/AppHeader.css';
-  .void {
-    height: 61px;
-  }
+@import '../../assets/components/app/AppHeader.css';
 </style>
