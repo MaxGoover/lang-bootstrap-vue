@@ -3,28 +3,18 @@
     <div class="copyright">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
-            <ul class="nav">
-              <li class="nav-item">
-                <span class="nav-link">&copy; 2022 Theme by psdfreebis.com</span>
-              </li>
-              <li class="nav-item"><a href="#" class="nav-link">Privacy</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Terms of Use</a>
-              </li>
-              <li class="nav-item"><a href="#" class="nav-link">Site Map</a></li>
-            </ul>
+          <div class="col">
+            <span>
+              &copy; 2020 Written with
+              <i class="fa fa-heart" style="color: red"/>
+              by Maxim Zaharov
+            </span>
           </div>
         </div>
       </div>
     </div>
     <div class="void"></div>
   </footer>
-
-<!--  <v-footer app fixed>-->
-<!--    &copy; 2020-->
-<!--    <v-spacer/>Written with-->
-<!--    <v-icon color="red">mdi-heart</v-icon>by Maxim Zaharov-->
-<!--  </v-footer>-->
 </template>
 
 <script>
@@ -34,6 +24,9 @@ export default {
 </script>
 
 <style scoped>
+.container {
+  height: 40px;
+}
 .copyright {
   background-color: #fff;
   bottom: 0;
