@@ -1,6 +1,6 @@
 import app from './modules/app/app'
 import authorization from './modules/auth/authorization'
-import grammar from './modules/grammar/grammar'
+import grammar from './modules/training/grammar'
 import training from './modules/training/training'
 import user from './modules/user/user'
 import Vue from 'vue'

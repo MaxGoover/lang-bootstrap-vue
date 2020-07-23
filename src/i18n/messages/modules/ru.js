@@ -7,7 +7,7 @@ export default {
     logout: 'Выйти',
     main: 'Главная',
     signup: 'Зарегистрироваться',
-    trainings: 'Тренировки'
+    training: 'Тренировки'
   },
   common: {
     no: 'Нет',
@@ -26,7 +26,7 @@ export default {
     back: 'Назад',
     main: 'Главная'
   },
-  pageTrainings: {},
+  pageTraining: {},
   pageSign: {
     authorization: 'Авторизация',
     password: 'Пароль',

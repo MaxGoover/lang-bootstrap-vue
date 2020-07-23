@@ -23,23 +23,26 @@
       <!--Элементы меню-->
       <div class="collapse navbar-collapse" id="navbar">
         <ul class="navbar-nav">
-          <router-link
+          <li
             v-for="(item, i) in menuItems"
             :key="i"
-            :to="item.route"
+            class="nav-item ml-3 my-auto"
           >
-            <li class="nav-item ml-3 my-auto">
-              <a class="nav-link">{{ item.title }}</a>
-            </li>
-          </router-link>
+            <router-link class="nav-link" :to="item.route">
+              {{ item.title }}
+            </router-link>
+          </li>
         </ul>
 
         <!--Профиль пользователя-->
         <div class="nav-item dropdown ml-auto">
           <a
-            class="nav-link dropdown-toggle" id="navbarDropdown"
-            role="button" data-toggle="dropdown" aria-haspopup="true"
+            class="nav-link dropdown-toggle"
+            id="navbarDropdown"
+            role="button"
             aria-expanded="false"
+            aria-haspopup="true"
+            data-toggle="dropdown"
           >
             Имя пользователя
           </a>
@@ -72,24 +75,15 @@ export default {
     menuItems() {
       return this.isAuthorized ? [
         new MenuItem(
-          'mdi-account-edit',
-          this.$i18n.t('appHeader.trainings'),
+          this.$i18n.t('appHeader.training'),
           { name: 'Grammar' }
-        ),
-        new MenuItem(
-          'mdi-logout',
-          this.$i18n.t('appHeader.logout'),
-          null,
-          this.showDialog
         )
       ] : [
         new MenuItem(
-          'mdi-login',
           this.$i18n.t('appHeader.login'),
           { name: 'Login' }
         ),
         new MenuItem(
-          'mdi-lock-open',
           this.$i18n.t('appHeader.signup'),
           { name: 'Signup' }
         )

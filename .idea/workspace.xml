@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14bb7e73-18d6-41de-8209-e7b40ad97b8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/entities/MenuItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/training/grammar/GrammarLevel.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/training/Grammar.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/components/app/AppHeader.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/components/app/AppHeader.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/app/AppFooter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/AppFooter.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/app/AppHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/AppHeader.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/i18n/messages/modules/ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/i18n/messages/modules/ru.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/modules/grammar/grammar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/modules/training/grammar.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +61,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/training/grammar" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
@@ -68,13 +69,15 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/training/grammar" />
+      <recent name="$PROJECT_DIR$/src/views/trainings" />
+      <recent name="$PROJECT_DIR$/src/views" />
       <recent name="$PROJECT_DIR$/src/entities" />
       <recent name="$PROJECT_DIR$/src/components/app" />
-      <recent name="$PROJECT_DIR$/src/assets" />
-      <recent name="$PROJECT_DIR$/public" />
-      <recent name="$PROJECT_DIR$/public/img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/store/modules/training" />
+      <recent name="$PROJECT_DIR$/src/store/modules/trainings" />
       <recent name="$PROJECT_DIR$/public/img/icons" />
       <recent name="$PROJECT_DIR$/public" />
     </key>
@@ -107,7 +110,7 @@
       <workItem from="1595410079592" duration="17313000" />
       <workItem from="1595446122865" duration="13383000" />
       <workItem from="1595497397796" duration="10976000" />
-      <workItem from="1595526671508" duration="8139000" />
+      <workItem from="1595526671508" duration="12305000" />
     </task>
     <task id="LOCAL-00001" summary="Init application">
       <created>1595362054297</created>
@@ -256,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595527015624</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Added menu items">
+      <created>1595541019720</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1595541019720</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,13 +307,14 @@
     <MESSAGE value="Added footer" />
     <MESSAGE value="Sticky navbar and footer" />
     <MESSAGE value="Fixed footer text" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed footer text" />
+    <MESSAGE value="Added menu items" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added menu items" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="217" y="27" width="988" height="741" key="CommitChangelistDialog2" timestamp="1595527015104">
+    <state x="217" y="27" width="988" height="741" key="CommitChangelistDialog2" timestamp="1595541019551">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="217" y="27" width="988" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1595527015104" />
+    <state x="217" y="27" width="988" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1595541019551" />
     <state x="167" y="125" width="1099" height="543" key="DiffContextDialog" timestamp="1595526981240">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -316,10 +327,10 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="75" y="27" key="SettingsEditor/67.27.1299.741@67.27.1299.741" timestamp="1595528033849" />
-    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1595527018838">
+    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1595541024734">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1299.741@67.27.1299.741" timestamp="1595527018838" />
+    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1299.741@67.27.1299.741" timestamp="1595541024734" />
     <state x="362" y="132" width="709" height="528" key="find.popup" timestamp="1595498101268">
       <screen x="67" y="27" width="1299" height="741" />
     </state>

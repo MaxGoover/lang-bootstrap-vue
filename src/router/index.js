@@ -24,18 +24,18 @@ const routes = [
   //   beforeEnter: authGuard
   // },
   {
-    path: '/trainings',
-    name: 'Trainings',
-    component: () => import('../views/Grammar.vue'),
+    path: '/training/grammar',
+    name: 'Grammar',
+    component: () => import('../views/training/Grammar.vue'),
     beforeEnter: authGuard
   },
-  {
-    path: '/trainings/:type',
-    name: 'Trainings',
-    props: true,
-    component: () => import('../components/grammar/GrammarTraining.vue'),
-    beforeEnter: authGuard
-  },
+  // {
+  //   path: '/trainings/:type',
+  //   name: 'Trainings',
+  //   props: true,
+  //   component: () => import('../components/grammar/GrammarTraining.vue'),
+  //   beforeEnter: authGuard
+  // },
   // {
   //   path: '/login',
   //   name: 'Login',
