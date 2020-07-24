@@ -29,7 +29,7 @@ export default {
   },
   actions: {
     getExercises ({ commit }, payload) {
-      this.dispatch('general/startLoading')
+      this.dispatch('app/startLoading')
       axios.post('grammar/training/index', {
         alias: payload,
         conditions: TrainingHelper[payload]
@@ -41,7 +41,7 @@ export default {
           },
           reject => { console.log(2, reject.response) })
         .catch(error => { console.log(3, error) })
-        .finally(() => { this.dispatch('general/stopLoading') })
+        .finally(() => { this.dispatch('app/stopLoading') })
     }
   }
 }

@@ -27,10 +27,10 @@ export default {
     GrammarLevel: () => import('../../components/training/grammar/GrammarLevel')
   },
   computed: {
-    ...mapState('training/grammar', ['levels'])
+    ...mapState('grammar', ['levels'])
   },
   created () {
-    this.$store.dispatch('training/grammar/getLevels')
+    this.$store.dispatch('grammar/getLevels')
   }
 }
 </script>

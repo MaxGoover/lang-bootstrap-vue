@@ -1,14 +1,14 @@
 <template>
-  <v-container grid-list-md>
-    <v-row>
+  <div class="container">
+    <div class="row">
       <!--Список тренировок-->
       <grammar-trainings-list-item
         v-for="(training, i) in trainings"
         :key="i"
         :training="training"
       />
-    </v-row>
-  </v-container>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -17,7 +17,9 @@ export default {
   components: {
     GrammarTrainingsListItem: () => import('./GrammarTrainingsListItem')
   },
-  props: { trainings: { type: Array } }
+  props: {
+    trainings: { type: Array }
+  }
 }
 </script>
 

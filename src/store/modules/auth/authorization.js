@@ -36,7 +36,7 @@ export default {
   },
   actions: {
     login ({ commit }, payload) {
-      this.dispatch('general/startLoading')
+      this.dispatch('app/startLoading')
       axios.post('auth/auth/login', {
         LoginForm: payload
       })
@@ -55,7 +55,7 @@ export default {
             console.log(2, reject.response)
           })
         .catch(error => { console.log(3, error) })
-        .finally(() => { this.dispatch('general/stopLoading') })
+        .finally(() => { this.dispatch('app/stopLoading') })
     },
 
     /**
@@ -64,7 +64,7 @@ export default {
      * @param commit
      */
     logout ({ commit }) {
-      this.dispatch('general/startLoading')
+      this.dispatch('app/startLoading')
 
       axios.post('auth/auth/logout')
         .then(
@@ -91,7 +91,7 @@ export default {
             console.log(2, reject.response)
           })
         .catch(error => { console.log(3, error) })
-        .finally(() => { this.dispatch('general/stopLoading') })
+        .finally(() => { this.dispatch('app/stopLoading') })
     },
 
     /**
@@ -101,7 +101,7 @@ export default {
      * @returns {Promise<unknown>}
      */
     signup ({ commit }, payload) {
-      this.dispatch('general/startLoading')
+      this.dispatch('app/startLoading')
 
       axios.post('auth/signup/signup', {
         SignupForm: payload
@@ -121,7 +121,7 @@ export default {
             console.log(2, reject.response)
           })
         .catch(error => { console.log(3, error) })
-        .finally(() => { this.dispatch('general/stopLoading') })
+        .finally(() => { this.dispatch('app/stopLoading') })
         // commit('toggleLoading', false)
         //
         // // Удаление данных о пользователе
