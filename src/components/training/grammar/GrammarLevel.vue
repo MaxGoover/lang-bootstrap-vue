@@ -1,7 +1,7 @@
 <template>
   <div>
     <!--Уровень-->
-    <h3 class="ml-4">{{ (JSON.parse(level.level)).title }}</h3>
+    <h3>{{ (JSON.parse(level.level)).title }}</h3>
 
     <!--Список тренировок-->
     <grammar-trainings-list :trainings="JSON.parse(level.trainings)"/>
