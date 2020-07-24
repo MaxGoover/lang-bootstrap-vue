@@ -2,10 +2,13 @@
   <header>
     <nav class="navbar navbar-expand-md bg-light">
       <!--Логотип-->
-      <a class="navbar-brand ml-2 ml-sm-3" href="#">
+      <router-link
+        class="navbar-brand ml-2 ml-sm-3"
+        :to="{ name: 'Main' }"
+      >
         <i class="fa fa-ribbon" aria-hidden="true" style="font-size: 26px"/>
         <span class="ml-3">{{ $t('app.name') }}</span>
-      </a>
+      </router-link>
 
       <!--Иконка меню-->
       <button

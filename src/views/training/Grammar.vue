@@ -9,7 +9,7 @@
           <div class="row">
             <div class="d-flex">
               <!--Заголовок-->
-              <h1 class="mb-4">Грамматические тренировки</h1>
+              <h5 class="mt-3">Грамматические тренировки</h5>
             </div>
             <!--Список уровней-->
             <grammar-level
@@ -42,5 +42,8 @@ export default {
 </script>
 
 <style scoped>
-
+h5 {
+  font-weight: 600;
+  text-transform: uppercase;
+}
 </style>

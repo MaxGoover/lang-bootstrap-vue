@@ -38,9 +38,14 @@
 }
 .card {
   border-radius: 10px;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .35);
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 .card-img {
   height: 64px;
   width: 64px;
+}
+.text-muted {
+  font-size: 14px;
 }
 </style>
