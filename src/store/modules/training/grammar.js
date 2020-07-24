@@ -13,13 +13,13 @@ export default {
   },
   actions: {
     getLevels ({ commit }) {
-      this.dispatch('app/startLoading')
+      this.commit('app/startLoading')
       axios.post('grammar/level/index')
         .then(
           response => { commit('setLevels', response.data) },
           reject => { console.log(2, reject.response) })
         .catch(error => { console.log(3, error) })
-        .finally(() => { this.dispatch('app/stopLoading') })
+        .finally(() => { this.commit('app/stopLoading') })
     }
   }
 }
