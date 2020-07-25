@@ -6,18 +6,16 @@
           on lg and wider screens
         </div>
         <div class="col-md-12 col-lg-10">
-          <div class="row">
-            <div class="d-flex">
-              <!--Заголовок-->
-              <h5 class="mt-3">Грамматические тренировки</h5>
-            </div>
-            <!--Список уровней-->
-            <grammar-level
-              v-for="(level, i) in levels"
-              :key="i"
-              :level="level"
-            />
+          <div class="d-flex">
+            <!--Заголовок-->
+            <h5 class="mt-3">Грамматические тренировки</h5>
           </div>
+          <!--Список уровней-->
+          <grammar-level
+            v-for="(level, i) in levels"
+            :key="i"
+            :level="level"
+          />
         </div>
       </div>
     </div>

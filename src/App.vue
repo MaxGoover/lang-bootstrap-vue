@@ -3,6 +3,7 @@
     <!--Хеадер-->
     <app-header v-if="showAppHeader"/>
 
+    <!--Контент-->
     <router-view/>
 
     <!--Футер-->

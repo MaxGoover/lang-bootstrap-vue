@@ -47,7 +47,13 @@
   height: 64px;
   width: 64px;
 }
+.card .card-title {
+  color: #333;
+}
 .text-muted {
   font-size: 14px;
+}
+a:hover {
+  text-decoration: none;
 }
 </style>
