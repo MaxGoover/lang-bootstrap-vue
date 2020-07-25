@@ -6,7 +6,7 @@
     <router-view/>
 
     <!--Футер-->
-    <app-footer v-if="showAppFooter"/>
+    <app-footer v-if="false"/>
   </div>
 </template>
 

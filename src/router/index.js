@@ -29,13 +29,13 @@ const routes = [
     component: () => import('../views/training/Grammar.vue'),
     beforeEnter: authGuard
   },
-  // {
-  //   path: '/trainings/:type',
-  //   name: 'Trainings',
-  //   props: true,
-  //   component: () => import('../components/grammar/GrammarTraining.vue'),
-  //   beforeEnter: authGuard
-  // },
+  {
+    path: '/training/grammar/:alias',
+    name: 'GrammarTraining',
+    props: true,
+    component: () => import('../components/training/grammar/GrammarTraining.vue'),
+    beforeEnter: authGuard
+  },
   // {
   //   path: '/login',
   //   name: 'Login',
