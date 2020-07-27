@@ -12,6 +12,7 @@
         <div class="carousel-item active">
 <!--          <img src="https://picsum.photos/500/500" class="d-block w-100" alt="active">-->
           <img src="../../../../public/img/bg_exercise.jpg" class="d-block w-100" alt="active">
+
           <div class="carousel-caption d-none d-md-block">
             <h5>First slide label</h5>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>

@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="14bb7e73-18d6-41de-8209-e7b40ad97b8b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/trainings/grammar/GrammarTraining.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/trainings/grammar/GrammarTraining.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Main.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Main.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/training/Grammar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/training/Grammar.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,6 +135,7 @@
       <workItem from="1595786353841" duration="2956000" />
       <workItem from="1595834877396" duration="6715000" />
       <workItem from="1595850468252" duration="5598000" />
+      <workItem from="1595862459574" duration="521000" />
     </task>
     <task id="LOCAL-00001" summary="Init application">
       <created>1595362054297</created>
@@ -397,10 +395,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Added grammar training" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="217" y="27" width="988" height="741" key="CommitChangelistDialog2" timestamp="1595859287549">
+    <state x="217" y="27" width="988" height="741" key="CommitChangelistDialog2" timestamp="1595863004051">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="217" y="27" width="988" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1595859287549" />
+    <state x="217" y="27" width="988" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1595863004051" />
     <state x="167" y="125" width="1099" height="543" key="DiffContextDialog" timestamp="1595526981240">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -413,10 +411,10 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="75" y="27" key="SettingsEditor/67.27.1299.741@67.27.1299.741" timestamp="1595671653052" />
-    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1595845575583">
+    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1595859307403">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1299.741@67.27.1299.741" timestamp="1595845575583" />
+    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1299.741@67.27.1299.741" timestamp="1595859307402" />
     <state x="362" y="132" width="709" height="528" key="find.popup" timestamp="1595583165065">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
