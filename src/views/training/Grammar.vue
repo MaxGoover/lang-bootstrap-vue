@@ -28,7 +28,7 @@ import { mapState } from 'vuex'
 export default {
   name: 'Grammar',
   components: {
-    GrammarLevel: () => import('../../components/training/grammar/GrammarLevel')
+    GrammarLevel: () => import('../../components/trainings/grammar/GrammarLevel')
   },
   computed: {
     ...mapState('grammar', ['levels'])

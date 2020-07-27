@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14bb7e73-18d6-41de-8209-e7b40ad97b8b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/img/icons/android-chrome-192x192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/labyrinth.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/trainings/grammar/GrammarTraining.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/training/grammar/GrammarLevel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/training/grammar/GrammarLevel.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/training/grammar/GrammarTrainingsListItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/training/grammar/GrammarTrainingsListItem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.wef345fs.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/training/grammar/GrammarLevel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/trainings/grammar/GrammarLevel.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/training/grammar/GrammarTraining.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/training/grammar/GrammarTrainingsList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/trainings/grammar/GrammarTrainingsList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/training/grammar/GrammarTrainingsListItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/trainings/grammar/GrammarTrainingsListItem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/modules/training/training.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/modules/training/training.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/training/Grammar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/training/Grammar.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +82,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/training/grammar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../bootstrap" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.CSS" />
@@ -84,11 +90,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/components/training/grammar" />
+      <recent name="$PROJECT_DIR$/public/img" />
       <recent name="$PROJECT_DIR$/public/img/icons" />
+      <recent name="$PROJECT_DIR$/src/components/training/grammar" />
       <recent name="$PROJECT_DIR$/src/views/trainings" />
       <recent name="$PROJECT_DIR$/src/views" />
-      <recent name="$PROJECT_DIR$/src/entities" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/store/modules/training" />
@@ -130,7 +136,14 @@
       <workItem from="1595601645216" duration="6090000" />
       <workItem from="1595628695539" duration="1824000" />
       <workItem from="1595668743779" duration="4836000" />
-      <workItem from="1595682534487" duration="613000" />
+      <workItem from="1595682534487" duration="1498000" />
+      <workItem from="1595710168893" duration="599000" />
+      <workItem from="1595717269204" duration="599000" />
+      <workItem from="1595752346875" duration="1641000" />
+      <workItem from="1595755933263" duration="1205000" />
+      <workItem from="1595777727714" duration="599000" />
+      <workItem from="1595786353841" duration="2956000" />
+      <workItem from="1595834877396" duration="6219000" />
     </task>
     <task id="LOCAL-00001" summary="Init application">
       <created>1595362054297</created>
@@ -328,7 +341,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595670003566</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Fixed front-end errors">
+      <created>1595684983921</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1595684983921</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -348,7 +368,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Installed advanced template" />
     <MESSAGE value="Fixed i18n errors" />
     <MESSAGE value="Installed bootstrap vue" />
     <MESSAGE value="Added module store" />
@@ -373,29 +392,30 @@
     <MESSAGE value="Fixed card training item" />
     <MESSAGE value="Changed icons" />
     <MESSAGE value="Bad commit: added grammar training" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bad commit: added grammar training" />
+    <MESSAGE value="Fixed front-end errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed front-end errors" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="217" y="27" width="988" height="741" key="CommitChangelistDialog2" timestamp="1595670003349">
+    <state x="217" y="27" width="988" height="741" key="CommitChangelistDialog2" timestamp="1595684983507">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="217" y="27" width="988" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1595670003349" />
+    <state x="217" y="27" width="988" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1595684983507" />
     <state x="167" y="125" width="1099" height="543" key="DiffContextDialog" timestamp="1595526981240">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="167" y="125" width="1099" height="543" key="DiffContextDialog/67.27.1299.741@67.27.1299.741" timestamp="1595526981240" />
-    <state x="499" y="155" width="424" height="484" key="FileChooserDialogImpl" timestamp="1595630450064">
+    <state x="499" y="155" width="424" height="484" key="FileChooserDialogImpl" timestamp="1595843723869">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="499" y="155" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1595630450064" />
+    <state x="499" y="155" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1595843723869" />
     <state x="75" y="27" key="SettingsEditor" timestamp="1595671653052">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="75" y="27" key="SettingsEditor/67.27.1299.741@67.27.1299.741" timestamp="1595671653052" />
-    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1595630715317">
+    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1595684986641">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1299.741@67.27.1299.741" timestamp="1595630715317" />
+    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1299.741@67.27.1299.741" timestamp="1595684986641" />
     <state x="362" y="132" width="709" height="528" key="find.popup" timestamp="1595583165065">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -408,9 +428,9 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="380" y="175" key="run.anything.popup/67.27.1299.741@67.27.1299.741" timestamp="1595604586631" />
-    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1595539848649">
+    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1595845382991">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup/67.27.1299.741@67.27.1299.741" timestamp="1595539848649" />
+    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup/67.27.1299.741@67.27.1299.741" timestamp="1595845382991" />
   </component>
 </project>

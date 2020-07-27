@@ -36,6 +36,7 @@ export default {
       })
         .then(
           response => {
+            console.log(1, response.data)
             commit('setExercises', response.data.exercises.query)
             commit('setTraining', response.data.training)
           },
