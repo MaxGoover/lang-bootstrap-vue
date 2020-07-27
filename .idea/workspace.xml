@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14bb7e73-18d6-41de-8209-e7b40ad97b8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/img/icons/android-chrome-192x192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/labyrinth.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/trainings/grammar/GrammarTraining.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.wef345fs.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/training/grammar/GrammarLevel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/trainings/grammar/GrammarLevel.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/training/grammar/GrammarTraining.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/training/grammar/GrammarTrainingsList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/trainings/grammar/GrammarTrainingsList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/training/grammar/GrammarTrainingsListItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/trainings/grammar/GrammarTrainingsListItem.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/modules/training/training.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/modules/training/training.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/trainings/grammar/GrammarTraining.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/trainings/grammar/GrammarTraining.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Main.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Main.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/training/Grammar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/training/Grammar.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -143,7 +136,8 @@
       <workItem from="1595755933263" duration="1205000" />
       <workItem from="1595777727714" duration="599000" />
       <workItem from="1595786353841" duration="2956000" />
-      <workItem from="1595834877396" duration="6219000" />
+      <workItem from="1595834877396" duration="6715000" />
+      <workItem from="1595850468252" duration="5598000" />
     </task>
     <task id="LOCAL-00001" summary="Init application">
       <created>1595362054297</created>
@@ -348,7 +342,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595684983921</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Added grammar training">
+      <created>1595845571828</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1595845571828</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -368,7 +369,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed i18n errors" />
     <MESSAGE value="Installed bootstrap vue" />
     <MESSAGE value="Added module store" />
     <MESSAGE value="Added module router" />
@@ -393,13 +393,14 @@
     <MESSAGE value="Changed icons" />
     <MESSAGE value="Bad commit: added grammar training" />
     <MESSAGE value="Fixed front-end errors" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed front-end errors" />
+    <MESSAGE value="Added grammar training" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added grammar training" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="217" y="27" width="988" height="741" key="CommitChangelistDialog2" timestamp="1595684983507">
+    <state x="217" y="27" width="988" height="741" key="CommitChangelistDialog2" timestamp="1595859287549">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="217" y="27" width="988" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1595684983507" />
+    <state x="217" y="27" width="988" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1595859287549" />
     <state x="167" y="125" width="1099" height="543" key="DiffContextDialog" timestamp="1595526981240">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -412,10 +413,10 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="75" y="27" key="SettingsEditor/67.27.1299.741@67.27.1299.741" timestamp="1595671653052" />
-    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1595684986641">
+    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1595845575583">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1299.741@67.27.1299.741" timestamp="1595684986641" />
+    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1299.741@67.27.1299.741" timestamp="1595845575583" />
     <state x="362" y="132" width="709" height="528" key="find.popup" timestamp="1595583165065">
       <screen x="67" y="27" width="1299" height="741" />
     </state>

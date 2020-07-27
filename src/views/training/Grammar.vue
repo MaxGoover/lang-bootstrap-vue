@@ -1,5 +1,6 @@
 <template>
   <section>
+    <div class="Background"></div>
     <div class="container">
       <div class="row">
         <div class=" d-none d-lg-block col-lg-2">
@@ -43,5 +44,13 @@ export default {
 h5 {
   font-weight: 600;
   text-transform: uppercase;
+}
+.Background {
+  background: url('../../../public/img/usa_statue_of_liberty.jpg') center no-repeat;
+  background-size: cover;
+  height: 100%;
+  opacity: 0.4;
+  position: fixed;
+  width: 100%;
 }
 </style>

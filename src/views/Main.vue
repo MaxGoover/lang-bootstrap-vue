@@ -1,5 +1,6 @@
 <template>
   <section>
+    <div class="Background"></div>
     <div class="container">
       <div class="row">
         <div class=" d-none d-lg-block col-lg-2">
@@ -82,5 +83,12 @@
 </script>
 
 <style scoped>
-
+.Background {
+  background: url('../../public/img/usa_statue_of_liberty.jpg') center no-repeat;
+  background-size: cover;
+  height: 100%;
+  opacity: 0.4;
+  position: fixed;
+  width: 100%;
+}
 </style>
