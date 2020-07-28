@@ -1,31 +1,34 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <!--Хеадер-->
+    <app-header v-if="showAppHeader"/>
+
+    <!--Контент-->
     <router-view/>
+
+    <!--Футер-->
+    <app-footer v-if="false"/>
   </div>
 </template>
 
+<script>
+import { mapState } from 'vuex'
+
+export default {
+  name: 'App',
+  components: {
+    AppHeader: () => import('./components/app/AppHeader'),
+    AppFooter: () => import('./components/app/AppFooter')
+  },
+  computed: {
+    ...mapState('app', [
+      'showAppHeader',
+      'showAppFooter'
+    ])
+  }
+}
+</script>
+
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-}
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>
