@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="14bb7e73-18d6-41de-8209-e7b40ad97b8b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/trainings/grammar/GrammarTraining.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/trainings/grammar/GrammarTraining.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +138,9 @@
       <workItem from="1595786353841" duration="2956000" />
       <workItem from="1595834877396" duration="6715000" />
       <workItem from="1595850468252" duration="5598000" />
-      <workItem from="1595862459574" duration="521000" />
+      <workItem from="1595862459574" duration="3560000" />
+      <workItem from="1595875991898" duration="599000" />
+      <workItem from="1595923182066" duration="1215000" />
     </task>
     <task id="LOCAL-00001" summary="Init application">
       <created>1595362054297</created>
@@ -347,7 +352,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595845571828</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Bad Commit">
+      <created>1595863059800</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1595863059800</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -367,7 +379,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Installed bootstrap vue" />
     <MESSAGE value="Added module store" />
     <MESSAGE value="Added module router" />
     <MESSAGE value="Installed flush-promises" />
@@ -392,13 +403,14 @@
     <MESSAGE value="Bad commit: added grammar training" />
     <MESSAGE value="Fixed front-end errors" />
     <MESSAGE value="Added grammar training" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added grammar training" />
+    <MESSAGE value="Bad Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bad Commit" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="217" y="27" width="988" height="741" key="CommitChangelistDialog2" timestamp="1595863004051">
+    <state x="217" y="27" width="988" height="741" key="CommitChangelistDialog2" timestamp="1595938006494">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="217" y="27" width="988" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1595863004051" />
+    <state x="217" y="27" width="988" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1595938006494" />
     <state x="167" y="125" width="1099" height="543" key="DiffContextDialog" timestamp="1595526981240">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -411,10 +423,10 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="75" y="27" key="SettingsEditor/67.27.1299.741@67.27.1299.741" timestamp="1595671653052" />
-    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1595859307403">
+    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1595863063510">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1299.741@67.27.1299.741" timestamp="1595859307402" />
+    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1299.741@67.27.1299.741" timestamp="1595863063510" />
     <state x="362" y="132" width="709" height="528" key="find.popup" timestamp="1595583165065">
       <screen x="67" y="27" width="1299" height="741" />
     </state>

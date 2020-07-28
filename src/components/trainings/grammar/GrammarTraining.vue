@@ -1,52 +1,53 @@
 <template>
   <section>
-    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li
-          data-target="#carouselExampleCaptions" data-slide-to="0"
-          class="active"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-<!--          <img src="https://picsum.photos/500/500" class="d-block w-100" alt="active">-->
-          <img src="../../../../public/img/bg_exercise.jpg" class="d-block w-100" alt="active">
+    <b-carousel
+      id="carousel-1"
+      v-model="slide"
+      background="#ae5cbb"
+      controls
+      indicators
+      style="text-shadow: 1px 1px 2px #333;"
+      :interval="0"
+      @sliding-start="onSlideStart"
+      @sliding-end="onSlideEnd"
+    >
+      <b-carousel-slide
+        caption="First slide"
+        img-src="https://picsum.photos/1024/480/?image=52"
+        text="Nulla vitae elit libero, a pharetra augue mollis interdum."
+      />
 
-          <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="/public/img/labyrinth.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="/public/img/labyrinth.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl
-              consectetur.</p>
-          </div>
-        </div>
-      </div>
-      <a
-        class="carousel-control-prev" href="#carouselExampleCaptions"
-        role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a
-        class="carousel-control-next" href="#carouselExampleCaptions"
-        role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
+      <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=54">
+        <h1>Hello world!</h1>
+      </b-carousel-slide>
+
+      <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=58"/>
+
+      <b-carousel-slide>
+        <template v-slot:img>
+          <img
+            class="d-block img-fluid w-100"
+            width="1024"
+            height="480"
+            src="https://picsum.photos/1024/480/?image=55"
+            alt="image slot"
+          >
+        </template>
+      </b-carousel-slide>
+
+      <b-carousel-slide
+        caption="Blank Image"
+        img-blank
+        img-alt="Blank image"
+      >
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Suspendisse eros felis, tincidunt
+          a tincidunt eget, convallis vel est. Ut pellentesque ut lacus vel
+          interdum.
+        </p>
+      </b-carousel-slide>
+    </b-carousel>
   </section>
 </template>
 
@@ -67,6 +68,12 @@
         'training'
       ])
     },
+    data() {
+      return {
+        slide: 0,
+        sliding: null
+      }
+    },
     created() {
       this.$store.commit('app/setShowAppHeader', false)
       this.$store.commit('app/setShowAppFooter', false)
@@ -75,6 +82,16 @@
     beforeDestroy() {
       this.$store.commit('app/setShowAppHeader', true)
       this.$store.commit('app/setShowAppFooter', true)
+    },
+    methods: {
+      onSlideStart() {
+        this.sliding = true
+        console.log(5)
+      },
+      onSlideEnd() {
+        this.sliding = false
+        console.log(6)
+      }
     }
   }
 </script>
