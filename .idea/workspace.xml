@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14bb7e73-18d6-41de-8209-e7b40ad97b8b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/app/AppHeaderOld.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/trainings/grammar/GrammarTraining.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/trainings/grammar/GrammarTraining.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/app/AppHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/AppHeader.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/i18n/messages/modules/ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/i18n/messages/modules/ru.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +46,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="develop" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -141,6 +140,7 @@
       <workItem from="1595862459574" duration="3560000" />
       <workItem from="1595875991898" duration="599000" />
       <workItem from="1595923182066" duration="1215000" />
+      <workItem from="1595970608981" duration="790000" />
     </task>
     <task id="LOCAL-00001" summary="Init application">
       <created>1595362054297</created>
@@ -407,10 +407,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Bad Commit" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="217" y="27" width="988" height="741" key="CommitChangelistDialog2" timestamp="1595938006494">
+    <state x="217" y="27" width="988" height="741" key="CommitChangelistDialog2" timestamp="1595938388983">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="217" y="27" width="988" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1595938006494" />
+    <state x="217" y="27" width="988" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1595938388983" />
     <state x="167" y="125" width="1099" height="543" key="DiffContextDialog" timestamp="1595526981240">
       <screen x="67" y="27" width="1299" height="741" />
     </state>

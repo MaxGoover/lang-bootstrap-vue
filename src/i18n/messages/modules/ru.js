@@ -1,11 +1,16 @@
 export default {
   app: {
-    name: 'Lang-bootstrap'
+    name: 'Shop-bootstrap'
   },
   appHeader: {
+    cart: 'Корзина',
     login: 'Войти',
     logout: 'Выйти',
     main: 'Главная',
+    profile: 'Профиль',
+    search: 'Поиск',
+    searchGoods: 'Поиск товара',
+    shop: 'Магазин',
     signup: 'Зарегистрироваться',
     training: 'Тренировки'
   },
