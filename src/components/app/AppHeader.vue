@@ -16,8 +16,24 @@
       <b-navbar-toggle target="nav-collapse"/>
       <b-collapse id="nav-collapse" is-nav>
 
+        <!--Элементы меню-->
+        <ul class="navbar-nav">
+          <li
+            v-for="(item, i) in menuItems"
+            :key="i"
+            class="nav-item ml-3 my-auto"
+          >
+            <router-link class="nav-link" :to="item.route">
+              {{ item.title }}
+            </router-link>
+          </li>
+        </ul>
+
         <!--Поиск товара-->
-        <b-nav-form class="ml-2 ml-sm-4">
+        <b-nav-form
+          v-if="isAuthorized"
+          class="ml-2 ml-sm-4"
+        >
           <b-form-input
             class="mr-md-2"
             size="sm"
@@ -39,6 +55,7 @@
             />
           </router-link>
 
+          <!--Выбор языка-->
           <b-nav-item-dropdown text="Lang" right>
             <b-dropdown-item href="#">EN</b-dropdown-item>
             <b-dropdown-item href="#">RU</b-dropdown-item>
@@ -46,7 +63,6 @@
 
           <!--Меню пользователя-->
           <b-nav-item-dropdown right>
-            <!-- Using 'button-content' slot -->
             <template v-slot:button-content>
               <em>User</em>
             </template>
@@ -56,6 +72,7 @@
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
+    <div class="Void"/>
   </header>
 </template>
 
@@ -79,8 +96,8 @@ export default {
           { name: 'Grammar' }
         ),
         new MenuItem(
-          this.$i18n.t('appHeader.training'),
-          { name: 'Grammar' }
+          this.$i18n.t('appHeader.shop'),
+          { name: 'Shop' }
         )
       ] : [
         new MenuItem(
