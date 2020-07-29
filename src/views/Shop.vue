@@ -10,51 +10,155 @@
           <div class="col-md-12 col-lg-10">
             <h1 class="mb-3">Shop</h1>
 
-            <!--Список товаров катергории-->
-            <div role="tablist">
-              <b-card class="mb-1" no-body>
-                <b-card-header class="p-0" role="tab">
-                  <b-button
-                    block
-                    v-b-toggle.accordion-1
-                    variant="primary"
-                  >
-                    Accordion 1
-                  </b-button>
-                </b-card-header>
-                <b-collapse id="accordion-1" role="tabpanel">
-                  <b-card-body class="p-0">
-                    <div class="container">
-                      <div class="row">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6 mb-2 pl-0">
+                  <!--Список товаров катергории-->
+                  <div role="tablist">
+                    <b-card class="mb-1" no-body>
+                      <b-card-header class="p-0" role="tab">
+                        <b-button
+                          block
+                          v-b-toggle.accordion-1
+                          variant="primary"
+                        >
+                          Accordion 1
+                        </b-button>
+                      </b-card-header>
+                      <b-collapse id="accordion-1" role="tabpanel">
+                        <b-card-body class="p-0">
+                          <div class="container">
+                            <div class="row">
 
-                        <div class="col-6">
-                          <div class="row">
-                            <div class="col-10">.col-10</div>
-                            <div class="col-2">24</div>
+                              <div class="col-6">
+                                <div class="row">
+                                  <div class="col-10">.col-10</div>
+                                  <div class="col-2">24</div>
+                                </div>
+                              </div>
+
+                              <div class="col-6">
+                                <div class="row">
+                                  <div class="col-10">.col-10</div>
+                                  <div class="col-2">24</div>
+                                </div>
+                              </div>
+
+                              <div class="col-6">
+                                <div class="row">
+                                  <div class="col-10">.col-10</div>
+                                  <div class="col-2">24</div>
+                                </div>
+                              </div>
+
+                            </div>
                           </div>
-                        </div>
+                        </b-card-body>
+                      </b-collapse>
+                    </b-card>
 
-                        <div class="col-6">
-                          <div class="row">
-                            <div class="col-10">.col-10</div>
-                            <div class="col-2">24</div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 mb-2 pl-0">
+                  <!--Список товаров катергории-->
+                  <div role="tablist">
+                    <b-card class="mb-1" no-body>
+                      <b-card-header class="p-0" role="tab">
+                        <b-button
+                          block
+                          v-b-toggle.accordion-1
+                          variant="primary"
+                        >
+                          Accordion 1
+                        </b-button>
+                      </b-card-header>
+                      <b-collapse id="accordion-1" role="tabpanel">
+                        <b-card-body class="p-0">
+                          <div class="container">
+                            <div class="row">
+
+                              <div class="col-6">
+                                <div class="row">
+                                  <div class="col-10">.col-10</div>
+                                  <div class="col-2">24</div>
+                                </div>
+                              </div>
+
+                              <div class="col-6">
+                                <div class="row">
+                                  <div class="col-10">.col-10</div>
+                                  <div class="col-2">24</div>
+                                </div>
+                              </div>
+
+                              <div class="col-6">
+                                <div class="row">
+                                  <div class="col-10">.col-10</div>
+                                  <div class="col-2">24</div>
+                                </div>
+                              </div>
+
+                            </div>
                           </div>
-                        </div>
+                        </b-card-body>
+                      </b-collapse>
+                    </b-card>
 
-                        <div class="col-6">
-                          <div class="row">
-                            <div class="col-10">.col-10</div>
-                            <div class="col-2">24</div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 mb-2 pl-0">
+                  <!--Список товаров катергории-->
+                  <div role="tablist">
+                    <b-card class="mb-1" no-body>
+                      <b-card-header class="p-0" role="tab">
+                        <b-button
+                          block
+                          v-b-toggle.accordion-1
+                          variant="primary"
+                        >
+                          Accordion 1
+                        </b-button>
+                      </b-card-header>
+                      <b-collapse id="accordion-1" role="tabpanel">
+                        <b-card-body class="p-0">
+                          <div class="container">
+                            <div class="row">
+
+                              <div class="col-6">
+                                <div class="row">
+                                  <div class="col-10">.col-10</div>
+                                  <div class="col-2">24</div>
+                                </div>
+                              </div>
+
+                              <div class="col-6">
+                                <div class="row">
+                                  <div class="col-10">.col-10</div>
+                                  <div class="col-2">24</div>
+                                </div>
+                              </div>
+
+                              <div class="col-6">
+                                <div class="row">
+                                  <div class="col-10">.col-10</div>
+                                  <div class="col-2">24</div>
+                                </div>
+                              </div>
+
+                            </div>
                           </div>
-                        </div>
+                        </b-card-body>
+                      </b-collapse>
+                    </b-card>
 
-                      </div>
-                    </div>
-                  </b-card-body>
-                </b-collapse>
-              </b-card>
+                  </div>
+                </div>
 
+              </div>
             </div>
+
           </div>
         </div>
       </div>
