@@ -8,53 +8,48 @@
             on lg and wider screens
           </div>
           <div class="col-md-12 col-lg-10">
-            <h1>Shop</h1>
+            <h1 class="mb-3">Shop</h1>
 
+            <!--Список товаров катергории-->
             <div role="tablist">
-              <b-card no-body class="mb-1">
-                <b-card-header header-tag="header" class="p-1" role="tab">
-                  <b-button block v-b-toggle.accordion-1 variant="info">
+              <b-card class="mb-1" no-body>
+                <b-card-header class="p-0" role="tab">
+                  <b-button
+                    block
+                    v-b-toggle.accordion-1
+                    variant="primary"
+                  >
                     Accordion 1
                   </b-button>
                 </b-card-header>
-                <b-collapse
-                  id="accordion-1"
-                  accordion="my-accordion"
-                  role="tabpanel">
-                  <b-card-body>
-                    <b-card-text>I start opened because <code>visible</code> is
-                      <code>true</code></b-card-text>
-                    <b-card-text>
-                      Lorem ipsum dolor sit amet, consectetur
-                      adipisicing elit. Aspernatur blanditiis cumque
-                      dignissimos, eum facilis itaque praesentium quis
-                      voluptates? Amet consequuntur deserunt nostrum similique
-                      totam. Consequuntur explicabo molestias odit recusandae
-                      voluptates!
-                    </b-card-text>
-                  </b-card-body>
-                </b-collapse>
-              </b-card>
+                <b-collapse id="accordion-1" role="tabpanel">
+                  <b-card-body class="p-0">
+                    <div class="container">
+                      <div class="row">
 
-              <b-card no-body class="mb-1">
-                <b-card-header header-tag="header" class="p-1" role="tab">
-                  <b-button block v-b-toggle.accordion-2 variant="info">
-                    Accordion 2
-                  </b-button>
-                </b-card-header>
-                <b-collapse
-                  id="accordion-2"
-                  accordion="my-accordion"
-                  role="tabpanel">
-                  <b-card-body>
-                    <b-card-text>
-                      Lorem ipsum dolor sit amet, consectetur
-                      adipisicing elit. Aspernatur blanditiis cumque
-                      dignissimos, eum facilis itaque praesentium quis
-                      voluptates? Amet consequuntur deserunt nostrum similique
-                      totam. Consequuntur explicabo molestias odit recusandae
-                      voluptates!
-                    </b-card-text>
+                        <div class="col-6">
+                          <div class="row">
+                            <div class="col-10">.col-10</div>
+                            <div class="col-2">24</div>
+                          </div>
+                        </div>
+
+                        <div class="col-6">
+                          <div class="row">
+                            <div class="col-10">.col-10</div>
+                            <div class="col-2">24</div>
+                          </div>
+                        </div>
+
+                        <div class="col-6">
+                          <div class="row">
+                            <div class="col-10">.col-10</div>
+                            <div class="col-2">24</div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
                   </b-card-body>
                 </b-collapse>
               </b-card>
@@ -69,7 +64,14 @@
 
 <script>
 export default {
-  name: 'Shop'
+  name: 'Shop',
+  data () {
+    return {
+      items: [
+        { first_name: 'Dickerson', age: 40 }
+      ]
+    }
+  }
 }
 </script>
 
