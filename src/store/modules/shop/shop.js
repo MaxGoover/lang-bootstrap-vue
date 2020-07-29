@@ -1,27 +1,25 @@
 import { axios } from "../../../axios";
-import TrainingHelper from "../../../helpers/TrainingHelper";
 
 export default {
   namespaced: true,
   state: {
-    data: {}
+    groups: {}
   },
   getters: {},
   mutations: {
-
+    setGroups (state, payload) {
+      state.groups = payload
+    }
   },
   actions: {
-    getGroupsGoods ({ commit }) {
+    getGroups ({ commit }) {
       this.commit('app/startLoading')
-      axios.post('grammar/training/index', {
-        alias: payload,
-        conditions: TrainingHelper[payload]
-      })
+      axios.post('shop/group/index')
         .then(
           response => {
             console.log(1, response.data)
-            commit('setExercises', response.data.exercises.query)
-            commit('setTraining', response.data.training)
+            commit('setGroups', response.data)
+            // commit('setTraining', response.data.training)
           },
           reject => { console.log(2, reject.response) })
         .catch(error => { console.log(3, error) })

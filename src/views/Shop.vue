@@ -12,20 +12,27 @@
 
             <div class="container">
               <div class="row">
-                <div class="col-md-6 mb-2 pl-0">
+                <div
+                  v-for="group in groups"
+                  :key="group.id"
+                  class="col-md-6 mb-2 pl-0"
+                >
                   <!--Список товаров катергории-->
                   <div role="tablist">
                     <b-card class="mb-1" no-body>
                       <b-card-header class="p-0" role="tab">
                         <b-button
                           block
-                          v-b-toggle.accordion-1
+                          v-b-toggle="'accordion-' + group.id"
                           variant="primary"
                         >
-                          Accordion 1
+                          {{ group.title }}
                         </b-button>
                       </b-card-header>
-                      <b-collapse id="accordion-1" role="tabpanel">
+                      <b-collapse
+                        :id="'accordion-' + group.id"
+                        role="tabpanel"
+                      >
                         <b-card-body class="p-0">
                           <div class="container">
                             <div class="row">
@@ -59,106 +66,8 @@
 
                   </div>
                 </div>
-
-                <div class="col-md-6 mb-2 pl-0">
-                  <!--Список товаров катергории-->
-                  <div role="tablist">
-                    <b-card class="mb-1" no-body>
-                      <b-card-header class="p-0" role="tab">
-                        <b-button
-                          block
-                          v-b-toggle.accordion-1
-                          variant="primary"
-                        >
-                          Accordion 1
-                        </b-button>
-                      </b-card-header>
-                      <b-collapse id="accordion-1" role="tabpanel">
-                        <b-card-body class="p-0">
-                          <div class="container">
-                            <div class="row">
-
-                              <div class="col-6">
-                                <div class="row">
-                                  <div class="col-10">.col-10</div>
-                                  <div class="col-2">24</div>
-                                </div>
-                              </div>
-
-                              <div class="col-6">
-                                <div class="row">
-                                  <div class="col-10">.col-10</div>
-                                  <div class="col-2">24</div>
-                                </div>
-                              </div>
-
-                              <div class="col-6">
-                                <div class="row">
-                                  <div class="col-10">.col-10</div>
-                                  <div class="col-2">24</div>
-                                </div>
-                              </div>
-
-                            </div>
-                          </div>
-                        </b-card-body>
-                      </b-collapse>
-                    </b-card>
-
-                  </div>
-                </div>
-
-                <div class="col-md-6 mb-2 pl-0">
-                  <!--Список товаров катергории-->
-                  <div role="tablist">
-                    <b-card class="mb-1" no-body>
-                      <b-card-header class="p-0" role="tab">
-                        <b-button
-                          block
-                          v-b-toggle.accordion-1
-                          variant="primary"
-                        >
-                          Accordion 1
-                        </b-button>
-                      </b-card-header>
-                      <b-collapse id="accordion-1" role="tabpanel">
-                        <b-card-body class="p-0">
-                          <div class="container">
-                            <div class="row">
-
-                              <div class="col-6">
-                                <div class="row">
-                                  <div class="col-10">.col-10</div>
-                                  <div class="col-2">24</div>
-                                </div>
-                              </div>
-
-                              <div class="col-6">
-                                <div class="row">
-                                  <div class="col-10">.col-10</div>
-                                  <div class="col-2">24</div>
-                                </div>
-                              </div>
-
-                              <div class="col-6">
-                                <div class="row">
-                                  <div class="col-10">.col-10</div>
-                                  <div class="col-2">24</div>
-                                </div>
-                              </div>
-
-                            </div>
-                          </div>
-                        </b-card-body>
-                      </b-collapse>
-                    </b-card>
-
-                  </div>
-                </div>
-
               </div>
             </div>
-
           </div>
         </div>
       </div>
@@ -167,14 +76,22 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
+
 export default {
   name: 'Shop',
+  computed: {
+    ...mapState('shop', ['groups'])
+  },
   data () {
     return {
       items: [
         { first_name: 'Dickerson', age: 40 }
       ]
     }
+  },
+  created () {
+    this.$store.dispatch('shop/getGroups')
   }
 }
 </script>
