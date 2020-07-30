@@ -3,9 +3,12 @@ import { axios } from "../../../axios";
 export default {
   namespaced: true,
   state: {
-    groups: {}
+    groups: []
   },
-  getters: {},
+  getters: {
+    evenGroups: state => state.groups.filter((e,i) => !(i % 2)),
+    oddGroups: state => state.groups.filter((e,i) => i % 2),
+  },
   mutations: {
     setGroups (state, payload) {
       state.groups = payload
