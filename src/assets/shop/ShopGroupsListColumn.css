@@ -1,0 +1,12 @@
+.Goods {
+  cursor: pointer;
+}
+.GoodsTitle {
+  width: 80%;
+}
+.GoodsPrice {
+  font-weight: 600;
+  text-align: center;
+  vertical-align: center;
+  width: 20%;
+}

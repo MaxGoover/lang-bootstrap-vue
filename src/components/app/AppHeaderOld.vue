@@ -102,5 +102,5 @@ export default {
 </script>
 
 <style scoped>
-@import '../../assets/components/app/AppHeader.css';
+@import '../../assets/app/AppHeader.css';
 </style>

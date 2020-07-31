@@ -7,6 +7,8 @@
       role="tablist"
     >
       <b-card class="mb-1" no-body>
+
+        <!--Название группы товаров-->
         <b-card-header class="p-0" role="tab">
           <b-button
             block
@@ -16,6 +18,8 @@
             {{ group.title }}
           </b-button>
         </b-card-header>
+
+        <!--Список товаров-->
         <b-collapse
           :id="'accordion-' + group.id"
           role="tabpanel"
@@ -26,11 +30,12 @@
               <tr
                 v-for="goods in group.goods"
                 :key="goods.id"
+                class="Goods"
               >
-                <td class="p-2" style="width: 75%">
+                <td class="p-2 GoodsTitle">
                   {{ goods.title }}({{ goods.quantity }})
                 </td>
-                <td style="width: 25%; text-align: center; background-color: aliceblue; vertical-align: center; font-weight: 600;">
+                <td class="GoodsPrice">
                   {{ goods.price }}
                 </td>
               </tr>
@@ -48,13 +53,13 @@ export default {
   name: 'ShopGroupsListColumn',
   props: {
     groups: {
-      type: Array,
-      default: () => []
+      default: () => [],
+      type: Array
     }
   }
 }
 </script>
 
 <style scoped>
-
+@import '../../assets/shop/ShopGroupsListColumn.css';
 </style>

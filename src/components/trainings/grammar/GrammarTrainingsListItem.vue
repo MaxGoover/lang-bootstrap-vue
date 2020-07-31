@@ -1,6 +1,11 @@
 <template>
   <div class="col-md-6 mb-3 pl-0">
-    <router-link :to="{ name: 'GrammarTraining', params: { alias: training.alias } }">
+    <router-link
+      :to="{
+        name: 'GrammarTraining',
+        params: { alias: training.alias }
+      }"
+    >
       <div class="card">
         <div class="row no-gutters">
           <div class="col-2 px-3 my-auto">
@@ -35,25 +40,5 @@
 </script>
 
 <style scoped>
-.col-md-6 {
-  height: 88px;
-}
-.card {
-  border-radius: 10px;
-  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .35);
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-}
-.card .card-img {
-  height: 64px;
-  width: 64px;
-}
-.card .card-title {
-  color: #333;
-}
-.text-muted {
-  font-size: 14px;
-}
-a:hover {
-  text-decoration: none;
-}
+@import '../../../assets/shop/ShopGroupsListColumn.css';
 </style>
