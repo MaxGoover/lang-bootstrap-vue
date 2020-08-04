@@ -17,7 +17,7 @@ import { mapState } from 'vuex'
 export default {
   name: 'App',
   components: {
-    AppHeader: () => import('./components/app/AppHeader'),
+    AppHeader: () => import('./components/app/appHeader/AppHeader'),
     AppFooter: () => import('./components/app/AppFooter')
   },
   computed: {

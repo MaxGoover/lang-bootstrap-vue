@@ -1,5 +1,5 @@
 <template>
-  <div class="col-md-6 mb-3 pl-0">
+  <div class="col-md-6 pl-0">
     <div
       v-for="group in groups"
       :key="group.id"

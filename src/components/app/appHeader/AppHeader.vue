@@ -44,16 +44,8 @@
 
         <b-navbar-nav class="ml-auto">
           <!--Корзина-->
-          <router-link
-            class="navbar-brand"
-            :to="{ name: 'Main' }"
-          >
-            <i
-              class="fa fa-shopping-cart"
-              aria-hidden="true"
-              :title="$t('appHeader.cart')"
-            />
-          </router-link>
+
+          <cart/>
 
           <!--Выбор языка-->
           <b-nav-item-dropdown text="Lang" right>
@@ -78,13 +70,12 @@
 
 <script>
 import { mapState } from 'vuex'
-// import DialogWindow from '../../components/menu/DialogWindow'
-import MenuItem from '../../entities/MenuItem'
+import MenuItem from '../../../entities/MenuItem'
 
 export default {
   name: 'AppHeader',
   components: {
-    // DialogWindow
+    Cart: () => import('./Cart')
   },
   computed: {
     ...mapState('app', ['loading']),
@@ -120,5 +111,5 @@ export default {
 </script>
 
 <style scoped>
-@import '../../assets/app/AppHeader.css';
+@import '../../../assets/app/AppHeader.css';
 </style>
