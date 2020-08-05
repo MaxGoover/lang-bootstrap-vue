@@ -70,12 +70,12 @@
 
 <script>
 import { mapState } from 'vuex'
-import MenuItem from '../../../entities/MenuItem'
+import MenuItem from '../../entities/MenuItem'
 
 export default {
   name: 'AppHeader',
   components: {
-    Cart: () => import('./Cart')
+    Cart: () => import('../shop/Cart')
   },
   computed: {
     ...mapState('app', ['loading']),
@@ -111,5 +111,5 @@ export default {
 </script>
 
 <style scoped>
-@import '../../../assets/app/AppHeader.css';
+@import '../../assets/app/AppHeader.css';
 </style>

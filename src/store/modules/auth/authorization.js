@@ -54,8 +54,12 @@ export default {
           reject => {
             console.log(2, reject.response)
           })
-        .catch(error => { console.log(3, error) })
-        .finally(() => { this.commit('app/stopLoading') })
+        .catch(error => {
+          console.log(3, error)
+        })
+        .finally(() => {
+          this.commit('app/stopLoading')
+        })
     },
 
     /**
@@ -89,8 +93,12 @@ export default {
           reject => {
             console.log(2, reject.response)
           })
-        .catch(error => { console.log(3, error) })
-        .finally(() => { this.commit('app/stopLoading') })
+        .catch(error => {
+          console.log(3, error)
+        })
+        .finally(() => {
+          this.commit('app/stopLoading')
+        })
     },
 
     /**
@@ -118,18 +126,22 @@ export default {
           reject => {
             console.log(2, reject.response)
           })
-        .catch(error => { console.log(3, error) })
-        .finally(() => { this.commit('app/stopLoading') })
-        // commit('toggleLoading', false)
-        //
-        // // Удаление данных о пользователе
-        // this.dispatch('user/clearUser')
-        //
-        // // Удаление токена
-        // commit('clearToken')
-        //
-        // // Очистка localStorage
-        // commit('clearLocalStorage')
+        .catch(error => {
+          console.log(3, error)
+        })
+        .finally(() => {
+          this.commit('app/stopLoading')
+        })
+      // commit('toggleLoading', false)
+      //
+      // // Удаление данных о пользователе
+      // this.dispatch('user/clearUser')
+      //
+      // // Удаление токена
+      // commit('clearToken')
+      //
+      // // Очистка localStorage
+      // commit('clearLocalStorage')
     },
 
     /**
