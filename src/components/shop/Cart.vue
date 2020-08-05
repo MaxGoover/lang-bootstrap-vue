@@ -14,6 +14,7 @@
       size="xl"
       title="Корзина"
     >
+      <pre>{{ cart }}</pre>
       <table class="table table-hover mb-0">
         <thead>
         <tr>
@@ -55,8 +56,13 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
+
 export default {
   name: 'Cart',
+  computed: {
+    ...mapState('shop', ['cart'])
+  },
   data() {
     return {
       fields: ['first_name', 'last_name', 'age'],

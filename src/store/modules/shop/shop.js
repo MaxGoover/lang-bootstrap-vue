@@ -19,6 +19,27 @@ export default {
     }
   },
   actions: {
+    addCartItem ({ commit }, payload) {
+      this.commit('app/startLoading')
+      console.log(5, payload)
+      axios.post('shop/cart/add', {
+        goodsId: payload
+      })
+        .then(
+          response => {
+            console.log(1, response.data)
+            commit('setCart', response.data)
+          },
+          reject => {
+            console.log(2, reject.response)
+          })
+        .catch(error => {
+          console.log(3, error)
+        })
+        .finally(() => {
+          this.commit('app/stopLoading')
+        })
+    },
     getCart ({ commit }) {
       this.commit('app/startLoading')
       axios.post('shop/cart/index')
@@ -42,7 +63,6 @@ export default {
       axios.post('shop/group/index')
         .then(
           response => {
-            console.log(1, response.data)
             commit('setGroups', response.data)
           },
           reject => {

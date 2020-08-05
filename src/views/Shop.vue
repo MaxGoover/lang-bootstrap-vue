@@ -32,12 +32,12 @@ export default {
 </script>
 
 <style scoped>
-  .Background {
-    background: url('../../public/img/bg_shop.jpg') center no-repeat;
-    background-size: cover;
-    height: 100%;
-    opacity: 0.4;
-    position: fixed;
-    width: 100%;
-  }
+.Background {
+  background: url('../../public/img/bg_shop.jpg') center no-repeat;
+  background-size: cover;
+  height: 100%;
+  opacity: 0.4;
+  position: fixed;
+  width: 100%;
+}
 </style>

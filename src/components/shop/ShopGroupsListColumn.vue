@@ -31,6 +31,7 @@
                 v-for="goods in group.goods"
                 :key="goods.id"
                 class="Goods"
+                @click="addCartItem(goods.id)"
               >
                 <td class="p-2 GoodsTitle">
                   {{ goods.title }}({{ goods.quantity }})
@@ -55,6 +56,11 @@ export default {
     groups: {
       default: () => [],
       type: Array
+    }
+  },
+  methods: {
+    addCartItem (goodsId) {
+      this.$store.dispatch('shop/addCartItem', goodsId)
     }
   }
 }
