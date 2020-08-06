@@ -4,7 +4,7 @@ import Vue from 'vue'
 export default {
   namespaced: true,
   state: {
-    cart: [],
+    cartGoods: [],
     groups: [],
     listAddedCartItems:{}
   },
@@ -13,26 +13,38 @@ export default {
     oddGroups: state => state.groups.filter((e, i) => i % 2),
   },
   mutations: {
-    // setCart (state, payload) {
-    //   state.cart = payload
-    // },
-    setCartItem (state, goods) {
-      if (state.listAddedCartItems[goods.id]) {
-        let index = 0
-        state.listAddedCartItems[goods.id] = false
-        state.cart.find((item, i) => {
-          if (item.id === goods.id) {
-            index = i
-            return true
-          }
-        })
-        state.cart.splice(index, 1)
-      } else {
-        state.listAddedCartItems[goods.id] = true
-        state.cart.push(goods)
-      }
-
+    /**
+     * Добавить товар в корзину.
+     * @param state
+     * @param goods
+     */
+    addCartItem (state, goods) {
+      state.listAddedCartItems[goods.id] = true
+      state.cartGoods.push(goods)
     },
+
+    /**
+     * Удалить товар из корзины.
+     * @param state
+     * @param goodsId
+     */
+    deleteCartItem (state, goodsId) {
+      let index = 0
+      state.listAddedCartItems[goodsId] = false
+      state.cartGoods.find((item, i) => {
+        if (item.id === goodsId) {
+          index = i
+          return true
+        }
+      })
+      state.cartGoods.splice(index, 1)
+    },
+
+    /**
+     * Изменить группы товаров.
+     * @param state
+     * @param payload
+     */
     setGroups (state, payload) {
       state.groups = payload
       payload.map(group => {
@@ -43,6 +55,9 @@ export default {
     }
   },
   actions: {
+    /**
+     * Получить корзину товаров.
+     */
     getCart () {
       this.commit('app/startLoading')
       axios.post('shop/cart/index')
@@ -61,6 +76,11 @@ export default {
           this.commit('app/stopLoading')
         })
     },
+
+    /**
+     * Получить все группы товаров.
+     * @param commit
+     */
     getGroups ({ commit }) {
       this.commit('app/startLoading')
       axios.post('shop/group/index')
@@ -77,9 +97,19 @@ export default {
         .finally(() => {
           this.commit('app/stopLoading')
         })
+    },
+
+    /**
+     * Добавить/удалить товар из корзины.
+     * @param state
+     * @param commit
+     * @param goods
+     */
+    setCartItem ({ state, commit }, goods) {
+      state.listAddedCartItems[goods.id]
+        ? commit('deleteCartItem', goods.id)
+        : commit('addCartItem', goods)
+
     }
-    // setCartItem ({ commit }, payload) {
-    //   commit('setCartItem', payload)
-    // }
   }
 }

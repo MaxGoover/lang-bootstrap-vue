@@ -66,7 +66,7 @@ export default {
   },
   methods: {
     setCartItem (goods) {
-      this.$store.commit('shop/setCartItem', goods)
+      this.$store.dispatch('shop/setCartItem', goods)
     }
   }
 }

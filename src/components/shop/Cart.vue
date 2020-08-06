@@ -17,13 +17,13 @@
       title="Корзина"
     >
       <table
-        v-if="cart.length"
-        class="table table-hover mb-0"
+        v-if="cartGoods.length"
+        class="table mb-0"
       >
         <thead>
           <tr>
             <th
-              v-for="(value, i) in tableHead"
+              v-for="(value, i) in tableHeader"
               :key="i"
               class="font-weight-normal text-muted"
             >
@@ -33,14 +33,18 @@
         </thead>
         <tbody>
           <tr
-            v-for="(cartItem, i) in cart"
+            v-for="(goods, i) in cartGoods"
             :key="i"
           >
-            <td :title="cartItem.description">{{ cartItem.title }}</td>
-            <td>{{ cartItem.quantity }}</td>
-            <td>{{ cartItem.price }} / шт.</td>
+            <td :title="goods.description">{{ goods.title }}</td>
+            <td>{{ goods.quantity }}</td>
+            <td>{{ goods.price }} / шт.</td>
             <td>
-              <button type="button" class="btn btn-light">
+              <button
+                class="btn btn-light"
+                type="button"
+                @click="deleteCartItem(goods.id)"
+              >
                 {{ $t('cart.table.delete') }}
               </button>
             </td>
@@ -48,6 +52,7 @@
         </tbody>
       </table>
 
+      <p v-if="!cartGoods.length">Корзина пуста</p>
     </b-modal>
   </div>
 </template>
@@ -58,11 +63,11 @@ import { mapState } from 'vuex'
 export default {
   name: 'Cart',
   computed: {
-    ...mapState('shop', ['cart'])
+    ...mapState('shop', ['cartGoods'])
   },
   data () {
     return {
-      tableHead: [
+      tableHeader: [
         this.$i18n.t('cart.table.title'),
         this.$i18n.t('cart.table.quantity'),
         this.$i18n.t('cart.table.price'),
@@ -70,8 +75,13 @@ export default {
       ]
     }
   },
-  created() {
+  created () {
     this.$store.dispatch('shop/getCart')
+  },
+  methods: {
+    deleteCartItem (goodsId) {
+      this.$store.commit('shop/deleteCartItem', goodsId)
+    }
   }
 }
 </script>
