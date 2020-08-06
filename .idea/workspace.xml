@@ -5,8 +5,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/shop/Cart.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shop/Cart.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/shop/ShopGroupsListColumn.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shop/ShopGroupsListColumn.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/i18n/messages/modules/ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/i18n/messages/modules/ru.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/modules/shop/shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/modules/shop/shop.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Shop.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Shop.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +48,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="feat/test1" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -76,7 +76,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lang-frontend" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
@@ -84,19 +84,19 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/store/modules/shop" />
-      <recent name="$PROJECT_DIR$/public/img" />
-      <recent name="$PROJECT_DIR$/public/img/icons" />
-      <recent name="$PROJECT_DIR$/src/components/training/grammar" />
-      <recent name="$PROJECT_DIR$/src/views/trainings" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/components/shop" />
       <recent name="$PROJECT_DIR$/src/components/app" />
       <recent name="$PROJECT_DIR$/src/components/app/appHeader" />
       <recent name="$PROJECT_DIR$/src/assets" />
       <recent name="$PROJECT_DIR$/src/store/modules/training" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/entities" />
+      <recent name="$PROJECT_DIR$/src/store/modules/shop" />
+      <recent name="$PROJECT_DIR$/public/img" />
+      <recent name="$PROJECT_DIR$/public/img/icons" />
+      <recent name="$PROJECT_DIR$/src/components/training/grammar" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -164,6 +164,10 @@
       <workItem from="1596628452696" duration="1854000" />
       <workItem from="1596639956361" duration="2126000" />
       <workItem from="1596649613608" duration="6443000" />
+      <workItem from="1596661850584" duration="643000" />
+      <workItem from="1596704703117" duration="4935000" />
+      <workItem from="1596724306973" duration="1289000" />
+      <workItem from="1596737670204" duration="8380000" />
     </task>
     <task id="LOCAL-00001" summary="Init application">
       <created>1595362054297</created>
@@ -431,7 +435,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596640681858</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Bad commit">
+      <created>1596662029105</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1596662029105</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -452,7 +463,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Chaged logo" />
-    <MESSAGE value="Bad commit" />
     <MESSAGE value="Deleted bootstrap-vue" />
     <MESSAGE value="Fixed errors" />
     <MESSAGE value="Fixed styles for appheader bootstrap" />
@@ -476,33 +486,34 @@
     <MESSAGE value="Separated styles from components into CSS-files" />
     <MESSAGE value="Added cart modal" />
     <MESSAGE value="Added cart into shop store" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added cart into shop store" />
+    <MESSAGE value="Bad commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bad commit" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="186" y="27" width="988" height="741" key="CommitChangelistDialog2" timestamp="1596640681295">
+    <state x="186" y="27" width="988" height="741" key="CommitChangelistDialog2" timestamp="1596662028256">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="186" y="27" width="988" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1596640681295" />
+    <state x="186" y="27" width="988" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1596662028256" />
     <state x="167" y="125" width="1099" height="543" key="DiffContextDialog" timestamp="1595526981240">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="167" y="125" width="1099" height="543" key="DiffContextDialog/67.27.1299.741@67.27.1299.741" timestamp="1595526981240" />
-    <state x="499" y="155" width="424" height="484" key="FileChooserDialogImpl" timestamp="1596640549210">
+    <state x="499" y="155" width="424" height="484" key="FileChooserDialogImpl" timestamp="1596746659235">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="499" y="155" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1596640549210" />
+    <state x="499" y="155" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1596746659235" />
     <state x="75" y="27" key="SettingsEditor" timestamp="1596640580501">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="75" y="27" key="SettingsEditor/67.27.1299.741@67.27.1299.741" timestamp="1596640580501" />
-    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1596640685339">
+    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1596662031921">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1299.741@67.27.1299.741" timestamp="1596640685339" />
-    <state x="362" y="132" width="709" height="528" key="find.popup" timestamp="1596649912221">
+    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1299.741@67.27.1299.741" timestamp="1596662031921" />
+    <state x="362" y="132" width="709" height="528" key="find.popup" timestamp="1596737982100">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="362" y="132" width="709" height="528" key="find.popup/67.27.1299.741@67.27.1299.741" timestamp="1596649912221" />
+    <state x="362" y="132" width="709" height="528" key="find.popup/67.27.1299.741@67.27.1299.741" timestamp="1596737982100" />
     <state x="357" y="191" width="709" height="413" key="git4idea.merge.GitPullDialog" timestamp="1595366769318">
       <screen x="67" y="27" width="1299" height="741" />
     </state>

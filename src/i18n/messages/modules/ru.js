@@ -14,6 +14,14 @@ export default {
     signup: 'Зарегистрироваться',
     training: 'Тренировки'
   },
+  cart: {
+    table: {
+      delete: 'Удалить',
+      title: 'Наименование товара и описание',
+      quantity: 'Количество',
+      price: 'Цена'
+    }
+  },
   common: {
     no: 'Нет',
     yes: 'Да'

@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!--Корзина-->
     <b-button v-b-modal.modal-cart variant="outline-light">
       <i
         class="fa fa-shopping-cart navbar-brand"
@@ -8,49 +9,45 @@
       />
     </b-button>
 
+    <!--Модальное окно корзины-->
     <b-modal
       id="modal-cart"
       scrollable
       size="xl"
       title="Корзина"
     >
-      <pre>{{ cart }}</pre>
-      <table class="table table-hover mb-0">
+      <table
+        v-if="cart.length"
+        class="table table-hover mb-0"
+      >
         <thead>
-        <tr>
-          <th
-            class="font-weight-normal text-muted"
-          >Наименование товара и описание</th>
-          <th>Количество</th>
-          <th>Цена</th>
-        </tr>
+          <tr>
+            <th
+              v-for="(value, i) in tableHead"
+              :key="i"
+              class="font-weight-normal text-muted"
+            >
+              {{ value }}
+            </th>
+          </tr>
         </thead>
         <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>@fat</td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td>Larry</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
-        </tr>
+          <tr
+            v-for="(cartItem, i) in cart"
+            :key="i"
+          >
+            <td :title="cartItem.description">{{ cartItem.title }}</td>
+            <td>{{ cartItem.quantity }}</td>
+            <td>{{ cartItem.price }} / шт.</td>
+            <td>
+              <button type="button" class="btn btn-light">
+                {{ $t('cart.table.delete') }}
+              </button>
+            </td>
+          </tr>
         </tbody>
       </table>
 
-      <p class="my-4" v-for="i in 10" :key="i">
-        Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis
-        in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-      </p>
     </b-modal>
   </div>
 </template>
@@ -63,14 +60,13 @@ export default {
   computed: {
     ...mapState('shop', ['cart'])
   },
-  data() {
+  data () {
     return {
-      fields: ['first_name', 'last_name', 'age'],
-      items: [
-        { isActive: true, age: 40, first_name: 'Dickerson', last_name: 'Macdonald', },
-        { isActive: false, age: 21, first_name: 'Larsen', last_name: 'Shaw' },
-        { isActive: false, age: 89, first_name: 'Geneva', last_name: 'Wilson' },
-        { isActive: true, age: 38, first_name: 'Jami', last_name: 'Carney' }
+      tableHead: [
+        this.$i18n.t('cart.table.title'),
+        this.$i18n.t('cart.table.quantity'),
+        this.$i18n.t('cart.table.price'),
+        ''
       ]
     }
   },

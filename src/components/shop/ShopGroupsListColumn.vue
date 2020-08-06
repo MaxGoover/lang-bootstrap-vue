@@ -8,7 +8,7 @@
     >
       <b-card class="mb-1" no-body>
 
-        <!--Название группы товаров-->
+        <!--Группа товаров-->
         <b-card-header class="p-0" role="tab">
           <b-button
             block
@@ -25,21 +25,22 @@
           role="tabpanel"
         >
           <b-card-body class="p-0">
-            <table class="table table-hover mb-0">
+            <table class="table mb-0">
               <tbody>
-              <tr
-                v-for="goods in group.goods"
-                :key="goods.id"
-                class="Goods"
-                @click="addCartItem(goods.id)"
-              >
-                <td class="p-2 GoodsTitle">
-                  {{ goods.title }}({{ goods.quantity }})
-                </td>
-                <td class="GoodsPrice">
-                  {{ goods.price }}
-                </td>
-              </tr>
+                <tr
+                  v-for="goods in group.goods"
+                  :key="goods.id"
+                  class="Goods"
+                  :class="listAddedCartItems[goods.id] ? 'table-warning' : ''"
+                  @click="setCartItem(goods)"
+                >
+                  <td class="p-2 GoodsTitle">
+                    {{ goods.title }}({{ goods.quantity }})
+                  </td>
+                  <td class="table-active GoodsPrice">
+                    {{ goods.price }}
+                  </td>
+                </tr>
               </tbody>
             </table>
           </b-card-body>
@@ -50,6 +51,8 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
+
 export default {
   name: 'ShopGroupsListColumn',
   props: {
@@ -58,9 +61,12 @@ export default {
       type: Array
     }
   },
+  computed: {
+    ...mapState('shop', ['listAddedCartItems'])
+  },
   methods: {
-    addCartItem (goodsId) {
-      this.$store.dispatch('shop/addCartItem', goodsId)
+    setCartItem (goods) {
+      this.$store.commit('shop/setCartItem', goods)
     }
   }
 }
