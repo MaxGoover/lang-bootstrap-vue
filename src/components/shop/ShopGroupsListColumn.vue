@@ -30,14 +30,14 @@
                 <tr
                   v-for="goods in group.goods"
                   :key="goods.id"
-                  class="Goods"
+                  class="cursor-pointer"
                   :class="listAddedCartItems[goods.id] ? 'table-warning' : ''"
                   @click="setCartItem(goods)"
                 >
-                  <td class="p-2 GoodsTitle">
-                    {{ goods.title }}({{ goods.quantity }})
+                  <td class="w-80 p-2">
+                    {{ goods.title }}({{ goods.inStock }})
                   </td>
-                  <td class="table-active GoodsPrice">
+                  <td class="table-active w-20 GoodsPrice">
                     {{ goods.price }}
                   </td>
                 </tr>

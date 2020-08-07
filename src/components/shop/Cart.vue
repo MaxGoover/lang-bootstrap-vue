@@ -37,9 +37,17 @@
             :key="i"
           >
             <td :title="goods.description">{{ goods.title }}</td>
-            <td>{{ goods.quantity }}</td>
-            <td>{{ goods.price }} / шт.</td>
-            <td>
+            <td class="w-15">
+              <input
+                v-model="voice"
+                class="Quantity"
+                min="1"
+                type="number"
+                :max="goods.inStock"
+              > шт.
+            </td>
+            <td class="w-20">{{ goods.price }} / шт.</td>
+            <td class="w-10">
               <button
                 class="btn btn-light"
                 type="button"
@@ -67,6 +75,7 @@ export default {
   },
   data () {
     return {
+      voice: 1,
       tableHeader: [
         this.$i18n.t('cart.table.title'),
         this.$i18n.t('cart.table.quantity'),
@@ -87,5 +96,5 @@ export default {
 </script>
 
 <style scoped>
-
+@import '../../assets/shop/Cart.css';
 </style>
