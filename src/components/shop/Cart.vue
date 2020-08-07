@@ -17,7 +17,7 @@
       title="Корзина"
     >
       <table
-        v-if="cartGoods.length"
+        v-if="cartItems.length"
         class="table mb-0"
       >
         <thead>
@@ -33,18 +33,18 @@
         </thead>
         <tbody>
           <tr
-            v-for="(goods, i) in cartGoods"
+            v-for="(goods, i) in cartItems"
             :key="i"
           >
             <td :title="goods.description">{{ goods.title }}</td>
             <td class="w-15">
               <input
-                v-model="voice"
+                v-model="goods.quantity"
                 class="Quantity"
                 min="1"
                 type="number"
                 :max="goods.inStock"
-              > шт.
+              /> шт.
             </td>
             <td class="w-20">{{ goods.price }} / шт.</td>
             <td class="w-10">
@@ -60,7 +60,7 @@
         </tbody>
       </table>
 
-      <p v-if="!cartGoods.length">Корзина пуста</p>
+      <p v-if="!cartItems.length">Корзина пуста</p>
     </b-modal>
   </div>
 </template>
@@ -71,7 +71,7 @@ import { mapState } from 'vuex'
 export default {
   name: 'Cart',
   computed: {
-    ...mapState('shop', ['cartGoods'])
+    ...mapState('shop', ['cartItems'])
   },
   data () {
     return {

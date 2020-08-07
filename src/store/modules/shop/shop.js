@@ -1,10 +1,11 @@
 import { axios } from '../../../axios'
+import CartItem from '../../../entities/CartItem'
 import Vue from 'vue'
 
 export default {
   namespaced: true,
   state: {
-    cartGoods: [],
+    cartItems: [],
     groups: [],
     listAddedCartItems:{}
   },
@@ -20,8 +21,12 @@ export default {
      */
     addCartItem (state, goods) {
       state.listAddedCartItems[goods.id] = true
-      state.cartGoods.push(goods)
+      state.cartItems.push(new CartItem(goods))
     },
+
+    // setQuantityCartItem (state, goods) {
+    //
+    // }
 
     /**
      * Удалить товар из корзины.
@@ -31,13 +36,13 @@ export default {
     deleteCartItem (state, goodsId) {
       let index = 0
       state.listAddedCartItems[goodsId] = false
-      state.cartGoods.find((item, i) => {
+      state.cartItems.find((item, i) => {
         if (item.id === goodsId) {
           index = i
           return true
         }
       })
-      state.cartGoods.splice(index, 1)
+      state.cartItems.splice(index, 1)
     },
 
     /**
