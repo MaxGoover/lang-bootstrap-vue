@@ -132,8 +132,6 @@ export default {
         .finally(() => {
           this.commit('app/stopLoading')
         })
-      // commit('toggleLoading', false)
-      //
       // // Удаление данных о пользователе
       // this.dispatch('user/clearUser')
       //

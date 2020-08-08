@@ -33,17 +33,18 @@
         </thead>
         <tbody>
           <tr
-            v-for="(goods, i) in cartItems"
-            :key="i"
+            v-for="(goods, j) in cartItems"
+            :key="j"
           >
             <td :title="goods.description">{{ goods.title }}</td>
             <td class="w-15">
               <input
-                v-model="goods.quantity"
+                :value="goods.quantity"
                 class="Quantity"
                 min="1"
                 type="number"
                 :max="goods.inStock"
+                @input="setQuantityCartItem(goods.id, ...arguments)"
               /> шт.
             </td>
             <td class="w-20">{{ goods.price }} / шт.</td>
@@ -90,6 +91,12 @@ export default {
   methods: {
     deleteCartItem (goodsId) {
       this.$store.commit('shop/deleteCartItem', goodsId)
+    },
+    setQuantityCartItem (goodsId, event) {
+      this.$store.commit('shop/setQuantityCartItem', {
+        goodsId,
+        quantity: event.target.value
+      })
     }
   }
 }

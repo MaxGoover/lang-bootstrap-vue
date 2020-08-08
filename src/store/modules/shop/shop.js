@@ -24,10 +24,6 @@ export default {
       state.cartItems.push(new CartItem(goods))
     },
 
-    // setQuantityCartItem (state, goods) {
-    //
-    // }
-
     /**
      * Удалить товар из корзины.
      * @param state
@@ -56,6 +52,15 @@ export default {
         group.goods.map(goods => {
           Vue.set(state.listAddedCartItems, goods.id, false)
         })
+      })
+    },
+
+    setQuantityCartItem (state, payload) {
+      state.cartItems.find(item => {
+        if (item.id === payload.goodsId) {
+          item.quantity = payload.quantity
+          return true
+        }
       })
     }
   },
