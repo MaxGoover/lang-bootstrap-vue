@@ -23,7 +23,8 @@ export default {
     addCartItem (state, goods) {
       state.listAddedCartItems[goods.id] = true
       state.cartItems.push(new CartItem(goods))
-      (new Notification('addedCartItem')).showSuccess()
+      const notification = new Notification('addedCartItem')
+      notification.showSuccess()
     },
 
     /**
@@ -41,7 +42,8 @@ export default {
         }
       })
       state.cartItems.splice(index, 1)
-      (new Notification('addedCartItem')).showError()
+      const notification = new Notification('deletedCartItem')
+      notification.showWarning()
     },
 
     /**
@@ -58,6 +60,11 @@ export default {
       })
     },
 
+    /**
+     * Изменить количество товара в корзине.
+     * @param state
+     * @param payload
+     */
     setQuantityCartItem (state, payload) {
       state.cartItems.find(item => {
         if (item.id === payload.goodsId) {
