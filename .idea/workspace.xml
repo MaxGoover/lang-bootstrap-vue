@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14bb7e73-18d6-41de-8209-e7b40ad97b8b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/shop/cart/CartContent.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/shop/cart/CartFooter.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/CartItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/CartItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/modules/shop/shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/modules/shop/shop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/shop/Cart.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/shop/CartContent.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/app/AppHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/AppHeader.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shop/Cart.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shop/cart/Cart.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,9 +40,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="XSLT Stylesheet" />
-        <option value="Vue Single File Component" />
         <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="Vue Single File Component" />
       </list>
     </option>
   </component>
@@ -74,27 +77,27 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/entities" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../front" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
     <property name="settings.editor.splitter.proportion" value="0.27619982" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/shop/cart" />
+      <recent name="$PROJECT_DIR$/src/components/shop" />
+      <recent name="$PROJECT_DIR$/src/components/app" />
+      <recent name="$PROJECT_DIR$/src/components/app/appHeader" />
+      <recent name="$PROJECT_DIR$/src/assets" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/entities" />
       <recent name="$PROJECT_DIR$/src/helpers" />
       <recent name="$PROJECT_DIR$/src/store/modules/shop" />
       <recent name="$PROJECT_DIR$/public/img" />
       <recent name="$PROJECT_DIR$/public/img/icons" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/components/shop" />
-      <recent name="$PROJECT_DIR$/src/components/app" />
-      <recent name="$PROJECT_DIR$/src/components/app/appHeader" />
-      <recent name="$PROJECT_DIR$/src/assets" />
-      <recent name="$PROJECT_DIR$/src/store/modules/training" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -173,7 +176,7 @@
       <workItem from="1596918130427" duration="5355000" />
       <workItem from="1596925472764" duration="9473000" />
       <workItem from="1596967086784" duration="796000" />
-      <workItem from="1596996002721" duration="4029000" />
+      <workItem from="1596996002721" duration="8192000" />
     </task>
     <task id="LOCAL-00001" summary="Init application">
       <created>1595362054297</created>
@@ -476,7 +479,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596934627796</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Added check quantity cartItem">
+      <created>1597000258882</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1597000258882</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -496,7 +506,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed errors" />
     <MESSAGE value="Fixed styles for appheader bootstrap" />
     <MESSAGE value="Changed favicon.ico" />
     <MESSAGE value="Added footer" />
@@ -521,37 +530,38 @@
     <MESSAGE value="Now cart is reactive))" />
     <MESSAGE value="Bad commit" />
     <MESSAGE value="Added notifications" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added notifications" />
+    <MESSAGE value="Added check quantity cartItem" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added check quantity cartItem" />
   </component>
   <component name="WindowStateProjectService">
     <state x="311" y="58" width="800" height="677" key="#Inspections" timestamp="1596926435727">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="311" y="58" width="800" height="677" key="#Inspections/67.27.1299.741@67.27.1299.741" timestamp="1596926435727" />
-    <state x="186" y="27" width="988" height="741" key="CommitChangelistDialog2" timestamp="1596934627602">
+    <state x="186" y="27" width="988" height="741" key="CommitChangelistDialog2" timestamp="1597000258608">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="186" y="27" width="988" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1596934627602" />
+    <state x="186" y="27" width="988" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1597000258608" />
     <state x="167" y="125" width="1099" height="543" key="DiffContextDialog" timestamp="1596832398826">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="167" y="125" width="1099" height="543" key="DiffContextDialog/67.27.1299.741@67.27.1299.741" timestamp="1596832398826" />
-    <state x="499" y="155" width="424" height="484" key="FileChooserDialogImpl" timestamp="1596746659235">
+    <state x="612" y="179" width="424" height="484" key="FileChooserDialogImpl" timestamp="1597005300436">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="499" y="155" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1596746659235" />
+    <state x="612" y="179" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1597005300436" />
     <state x="411" y="109" width="600" height="574" key="RollbackChangesDialog" timestamp="1596832400261">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="411" y="109" width="600" height="574" key="RollbackChangesDialog/67.27.1299.741@67.27.1299.741" timestamp="1596832400261" />
-    <state x="75" y="27" key="SettingsEditor" timestamp="1596930910714">
+    <state x="75" y="27" key="SettingsEditor" timestamp="1597002084008">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="75" y="27" key="SettingsEditor/67.27.1299.741@67.27.1299.741" timestamp="1596930910714" />
-    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1596934631566">
+    <state x="75" y="27" key="SettingsEditor/67.27.1299.741@67.27.1299.741" timestamp="1597002084008" />
+    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1597000262663">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1299.741@67.27.1299.741" timestamp="1596934631566" />
+    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1299.741@67.27.1299.741" timestamp="1597000262663" />
     <state x="362" y="132" width="709" height="528" key="find.popup" timestamp="1596996848388">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -564,9 +574,9 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="380" y="175" key="run.anything.popup/67.27.1299.741@67.27.1299.741" timestamp="1595604586631" />
-    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1596967240600">
+    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1597002125980">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup/67.27.1299.741@67.27.1299.741" timestamp="1596967240600" />
+    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup/67.27.1299.741@67.27.1299.741" timestamp="1597002125980" />
   </component>
 </project>

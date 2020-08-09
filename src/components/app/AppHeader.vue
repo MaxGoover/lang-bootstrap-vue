@@ -75,7 +75,7 @@ import MenuItem from '../../entities/MenuItem'
 export default {
   name: 'AppHeader',
   components: {
-    Cart: () => import('../shop/Cart')
+    Cart: () => import('../shop/cart/Cart')
   },
   computed: {
     ...mapState('app', ['loading']),
