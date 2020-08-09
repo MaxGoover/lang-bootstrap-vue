@@ -23,8 +23,7 @@ export default {
     addCartItem (state, goods) {
       state.listAddedCartItems[goods.id] = true
       state.cartItems.push(new CartItem(goods))
-      const notification = new Notification('success', 'addedCartItem')
-      notification.showSuccess()
+      (new Notification('addedCartItem')).showSuccess()
     },
 
     /**
@@ -42,6 +41,7 @@ export default {
         }
       })
       state.cartItems.splice(index, 1)
+      (new Notification('addedCartItem')).showError()
     },
 
     /**

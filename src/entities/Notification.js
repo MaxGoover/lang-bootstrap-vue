@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import { i18n } from '../i18n'
+import { i18n } from '../i18n/index'
 
 export default class Notifications {
   group = 'main'
@@ -7,28 +7,27 @@ export default class Notifications {
   title
   type =''
 
-  constructor (text, title) {
-    this.text = 'cartItemNotifications.' + i18n.t(text)
-    this.title = 'status.' + i18n.t(title)
-    console.log(this)
+  constructor (text) {
+    this.text = i18n.t('cartItemNotifications.' + text)
   }
 
   showError() {
-    this.#setType('error')
+    this.setStatus('error')
     Vue.notify(this)
   }
 
   showSuccess() {
-    this.#setType('success')
+    this.setStatus('success')
     Vue.notify(this)
   }
 
   showWarning() {
-    this.#setType('warn')
+    this.setStatus('warning')
     Vue.notify(this)
   }
 
-  #setType (type) {
-    this.type = type
+  setStatus (status) {
+    this.title = i18n.t('status.' + status)
+    this.type = status
   }
 }

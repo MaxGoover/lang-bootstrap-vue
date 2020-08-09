@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14bb7e73-18d6-41de-8209-e7b40ad97b8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/entities/Notification.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/Notification.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/babel.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/babel.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/i18n/messages/modules/ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/i18n/messages/modules/ru.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Notification.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Notification.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/modules/shop/shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/modules/shop/shop.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,8 +41,8 @@
       <list>
         <option value="XSLT Stylesheet" />
         <option value="Vue Single File Component" />
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -175,7 +174,7 @@
       <workItem from="1596816091083" duration="4820000" />
       <workItem from="1596827253720" duration="5085000" />
       <workItem from="1596918130427" duration="5355000" />
-      <workItem from="1596925472764" duration="6131000" />
+      <workItem from="1596925472764" duration="8954000" />
     </task>
     <task id="LOCAL-00001" summary="Init application">
       <created>1595362054297</created>
@@ -464,7 +463,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596827512860</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Bad commit">
+      <created>1596931857134</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1596931857134</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -516,10 +522,10 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="311" y="58" width="800" height="677" key="#Inspections/67.27.1299.741@67.27.1299.741" timestamp="1596926435727" />
-    <state x="186" y="27" width="988" height="741" key="CommitChangelistDialog2" timestamp="1596925411450">
+    <state x="186" y="27" width="988" height="741" key="CommitChangelistDialog2" timestamp="1596931856493">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="186" y="27" width="988" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1596925411450" />
+    <state x="186" y="27" width="988" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1596931856493" />
     <state x="167" y="125" width="1099" height="543" key="DiffContextDialog" timestamp="1596832398826">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -536,14 +542,14 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="75" y="27" key="SettingsEditor/67.27.1299.741@67.27.1299.741" timestamp="1596930910714" />
-    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1596925415474">
+    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1596931859785">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1299.741@67.27.1299.741" timestamp="1596925415474" />
-    <state x="362" y="132" width="709" height="528" key="find.popup" timestamp="1596930460511">
+    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1299.741@67.27.1299.741" timestamp="1596931859785" />
+    <state x="362" y="132" width="709" height="528" key="find.popup" timestamp="1596932497483">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="362" y="132" width="709" height="528" key="find.popup/67.27.1299.741@67.27.1299.741" timestamp="1596930460511" />
+    <state x="362" y="132" width="709" height="528" key="find.popup/67.27.1299.741@67.27.1299.741" timestamp="1596932497483" />
     <state x="357" y="191" width="709" height="413" key="git4idea.merge.GitPullDialog" timestamp="1595366769318">
       <screen x="67" y="27" width="1299" height="741" />
     </state>

@@ -19,14 +19,12 @@
 
 <script>
 import { mapState } from 'vuex'
-import Notifications from 'vue-notification'
 
 export default {
   name: 'App',
   components: {
     AppHeader: () => import('./components/app/AppHeader'),
-    AppFooter: () => import('./components/app/AppFooter'),
-    Notifications
+    AppFooter: () => import('./components/app/AppFooter')
   },
   computed: {
     ...mapState('app', [
@@ -38,5 +36,6 @@ export default {
 </script>
 
 <style>
-  @import 'assets/App.css';
+@import 'assets/App.css';
+@import 'assets/Notification.css';
 </style>
