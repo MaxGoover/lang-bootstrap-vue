@@ -22,6 +22,10 @@ export default {
       price: 'Цена'
     }
   },
+  cartItemNotifications: {
+    addedCartItem: 'Товар добавлен в корзину',
+    deletedCartItem: 'Товар удален из корзины'
+  },
   common: {
     no: 'Нет',
     yes: 'Да'
@@ -49,5 +53,10 @@ export default {
     signIn: 'Войти',
     signUp: 'Зарегистрироваться',
     username: 'Логин'
+  },
+  status: {
+    error: 'Ошибка',
+    success: 'Успешно',
+    warning: 'Внимание'
   }
 }

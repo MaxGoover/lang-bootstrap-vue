@@ -1,5 +1,6 @@
 import { axios } from '../../../axios'
 import CartItem from '../../../entities/CartItem'
+import Notification from '../../../entities/Notification'
 import Vue from 'vue'
 
 export default {
@@ -22,6 +23,8 @@ export default {
     addCartItem (state, goods) {
       state.listAddedCartItems[goods.id] = true
       state.cartItems.push(new CartItem(goods))
+      const notification = new Notification('success', 'addedCartItem')
+      notification.showSuccess()
     },
 
     /**

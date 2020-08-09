@@ -2,6 +2,7 @@ import './registerServiceWorker'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import App from './App.vue'
+import Notifications from 'vue-notification'
 import router from './router/index'
 import store from './store/index'
 import Vue from 'vue'
@@ -12,6 +13,7 @@ Vue.config.productionTip = false
 
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
+Vue.use(Notifications)
 
 new Vue({
   i18n,
