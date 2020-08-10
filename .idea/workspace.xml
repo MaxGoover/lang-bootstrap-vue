@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="14bb7e73-18d6-41de-8209-e7b40ad97b8b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/trainings/grammar/GrammarTraining.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/trainings/grammar/GrammarTraining.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/shop/CartContent.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/shop/CartContent.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shop/cart/CartContent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shop/cart/CartContent.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/modules/shop/shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/modules/shop/shop.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,15 +38,16 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="XSLT Stylesheet" />
-        <option value="Vue Single File Component" />
+        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="Vue Single File Component" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="develop" />
+        <entry key="$PROJECT_DIR$" value="feat/test1" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -75,25 +75,27 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../bootstrap" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../front" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.CSS" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
     <property name="settings.editor.splitter.proportion" value="0.27619982" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/shop/cart" />
+      <recent name="$PROJECT_DIR$/src/components/shop" />
+      <recent name="$PROJECT_DIR$/src/components/app" />
+      <recent name="$PROJECT_DIR$/src/components/app/appHeader" />
+      <recent name="$PROJECT_DIR$/src/assets" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/entities" />
+      <recent name="$PROJECT_DIR$/src/helpers" />
+      <recent name="$PROJECT_DIR$/src/store/modules/shop" />
       <recent name="$PROJECT_DIR$/public/img" />
       <recent name="$PROJECT_DIR$/public/img/icons" />
-      <recent name="$PROJECT_DIR$/src/components/training/grammar" />
-      <recent name="$PROJECT_DIR$/src/views/trainings" />
-      <recent name="$PROJECT_DIR$/src/views" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/store/modules/training" />
-      <recent name="$PROJECT_DIR$/src/store/modules/trainings" />
-      <recent name="$PROJECT_DIR$/public/img/icons" />
-      <recent name="$PROJECT_DIR$/public" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -141,6 +143,40 @@
       <workItem from="1595862459574" duration="3560000" />
       <workItem from="1595875991898" duration="599000" />
       <workItem from="1595923182066" duration="1215000" />
+      <workItem from="1595970608981" duration="1173000" />
+      <workItem from="1595974897128" duration="5829000" />
+      <workItem from="1596008035216" duration="15055000" />
+      <workItem from="1596044877517" duration="9028000" />
+      <workItem from="1596100035842" duration="9445000" />
+      <workItem from="1596141591038" duration="599000" />
+      <workItem from="1596185517690" duration="6591000" />
+      <workItem from="1596214911083" duration="1072000" />
+      <workItem from="1596226748760" duration="1395000" />
+      <workItem from="1596266776009" duration="2396000" />
+      <workItem from="1596320047138" duration="659000" />
+      <workItem from="1596405519139" duration="1211000" />
+      <workItem from="1596456502968" duration="2001000" />
+      <workItem from="1596486155645" duration="598000" />
+      <workItem from="1596535880401" duration="636000" />
+      <workItem from="1596562767065" duration="5963000" />
+      <workItem from="1596613536036" duration="2296000" />
+      <workItem from="1596628452696" duration="1854000" />
+      <workItem from="1596639956361" duration="2126000" />
+      <workItem from="1596649613608" duration="6443000" />
+      <workItem from="1596661850584" duration="643000" />
+      <workItem from="1596704703117" duration="4935000" />
+      <workItem from="1596724306973" duration="1289000" />
+      <workItem from="1596737670204" duration="8380000" />
+      <workItem from="1596749672344" duration="6377000" />
+      <workItem from="1596788782310" duration="5049000" />
+      <workItem from="1596816091083" duration="4820000" />
+      <workItem from="1596827253720" duration="5085000" />
+      <workItem from="1596918130427" duration="5355000" />
+      <workItem from="1596925472764" duration="9473000" />
+      <workItem from="1596967086784" duration="796000" />
+      <workItem from="1596996002721" duration="9976000" />
+      <workItem from="1597009966287" duration="7989000" />
+      <workItem from="1597047866141" duration="6683000" />
     </task>
     <task id="LOCAL-00001" summary="Init application">
       <created>1595362054297</created>
@@ -359,7 +395,105 @@
       <option name="project" value="LOCAL" />
       <updated>1595863059800</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Bad Commit">
+      <created>1595972848992</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1595972848992</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Added good accordions">
+      <created>1596019989008</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1596019989008</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Change goods accordions">
+      <created>1596028859136</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1596028859136</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Added ShopGroupsList.vue">
+      <created>1596116289673</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1596116289673</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Separated styles from components into CSS-files">
+      <created>1596190986046</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1596190986061</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Added cart modal">
+      <created>1596572700924</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1596572700924</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Added cart into shop store">
+      <created>1596640681858</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1596640681858</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Bad commit">
+      <created>1596662029105</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1596662029105</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Now cart is reactive))">
+      <created>1596756331761</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1596756331761</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Bad commit">
+      <created>1596827512860</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1596827512860</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Bad commit">
+      <created>1596931857134</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1596931857134</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Added notifications">
+      <created>1596934627795</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1596934627796</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Added check quantity cartItem">
+      <created>1597000258882</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1597000258882</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Separated cart to components">
+      <created>1597005395784</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1597005395784</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -379,17 +513,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added module store" />
-    <MESSAGE value="Added module router" />
-    <MESSAGE value="Installed flush-promises" />
-    <MESSAGE value="Added appheader" />
-    <MESSAGE value="Added logo and styles for appheader" />
-    <MESSAGE value="Good styles for app header" />
-    <MESSAGE value="Chaged logo" />
-    <MESSAGE value="Bad commit" />
-    <MESSAGE value="Deleted bootstrap-vue" />
-    <MESSAGE value="Fixed errors" />
-    <MESSAGE value="Fixed styles for appheader bootstrap" />
     <MESSAGE value="Changed favicon.ico" />
     <MESSAGE value="Added footer" />
     <MESSAGE value="Sticky navbar and footer" />
@@ -404,33 +527,52 @@
     <MESSAGE value="Fixed front-end errors" />
     <MESSAGE value="Added grammar training" />
     <MESSAGE value="Bad Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bad Commit" />
+    <MESSAGE value="Added good accordions" />
+    <MESSAGE value="Change goods accordions" />
+    <MESSAGE value="Added ShopGroupsList.vue" />
+    <MESSAGE value="Separated styles from components into CSS-files" />
+    <MESSAGE value="Added cart modal" />
+    <MESSAGE value="Added cart into shop store" />
+    <MESSAGE value="Now cart is reactive))" />
+    <MESSAGE value="Bad commit" />
+    <MESSAGE value="Added notifications" />
+    <MESSAGE value="Added check quantity cartItem" />
+    <MESSAGE value="Separated cart to components" />
+    <option name="LAST_COMMIT_MESSAGE" value="Separated cart to components" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="217" y="27" width="988" height="741" key="CommitChangelistDialog2" timestamp="1595938006494">
+    <state x="311" y="58" width="800" height="677" key="#Inspections" timestamp="1597051172072">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="217" y="27" width="988" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1595938006494" />
-    <state x="167" y="125" width="1099" height="543" key="DiffContextDialog" timestamp="1595526981240">
+    <state x="311" y="58" width="800" height="677" key="#Inspections/67.27.1299.741@67.27.1299.741" timestamp="1597051172072" />
+    <state x="186" y="27" width="988" height="741" key="CommitChangelistDialog2" timestamp="1597018078678">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="167" y="125" width="1099" height="543" key="DiffContextDialog/67.27.1299.741@67.27.1299.741" timestamp="1595526981240" />
-    <state x="499" y="155" width="424" height="484" key="FileChooserDialogImpl" timestamp="1595843723869">
+    <state x="186" y="27" width="988" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1597018078678" />
+    <state x="167" y="125" width="1099" height="543" key="DiffContextDialog" timestamp="1597017811402">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="499" y="155" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1595843723869" />
-    <state x="75" y="27" key="SettingsEditor" timestamp="1595671653052">
+    <state x="167" y="125" width="1099" height="543" key="DiffContextDialog/67.27.1299.741@67.27.1299.741" timestamp="1597017811402" />
+    <state x="612" y="179" width="424" height="484" key="FileChooserDialogImpl" timestamp="1597012206003">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="75" y="27" key="SettingsEditor/67.27.1299.741@67.27.1299.741" timestamp="1595671653052" />
-    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1595863063510">
+    <state x="612" y="179" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1597012206003" />
+    <state x="411" y="109" width="600" height="574" key="RollbackChangesDialog" timestamp="1597017883597">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1299.741@67.27.1299.741" timestamp="1595863063510" />
-    <state x="362" y="132" width="709" height="528" key="find.popup" timestamp="1595583165065">
+    <state x="411" y="109" width="600" height="574" key="RollbackChangesDialog/67.27.1299.741@67.27.1299.741" timestamp="1597017883597" />
+    <state x="75" y="27" key="SettingsEditor" timestamp="1597002084008">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="362" y="132" width="709" height="528" key="find.popup/67.27.1299.741@67.27.1299.741" timestamp="1595583165065" />
+    <state x="75" y="27" key="SettingsEditor/67.27.1299.741@67.27.1299.741" timestamp="1597002084008" />
+    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1597018081784">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1299.741@67.27.1299.741" timestamp="1597018081784" />
+    <state x="362" y="132" width="709" height="528" key="find.popup" timestamp="1596996848388">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="362" y="132" width="709" height="528" key="find.popup/67.27.1299.741@67.27.1299.741" timestamp="1596996848388" />
     <state x="357" y="191" width="709" height="413" key="git4idea.merge.GitPullDialog" timestamp="1595366769318">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -439,9 +581,9 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="380" y="175" key="run.anything.popup/67.27.1299.741@67.27.1299.741" timestamp="1595604586631" />
-    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1595845382991">
+    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1597049972254">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup/67.27.1299.741@67.27.1299.741" timestamp="1595845382991" />
+    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup/67.27.1299.741@67.27.1299.741" timestamp="1597049972254" />
   </component>
 </project>

@@ -1,13 +1,30 @@
 export default {
   app: {
-    name: 'Lang-bootstrap'
+    name: 'Shop-bootstrap'
   },
   appHeader: {
+    cart: 'Корзина',
     login: 'Войти',
     logout: 'Выйти',
     main: 'Главная',
+    profile: 'Профиль',
+    search: 'Поиск',
+    searchGoods: 'Поиск товара',
+    shop: 'Магазин',
     signup: 'Зарегистрироваться',
     training: 'Тренировки'
+  },
+  cart: {
+    table: {
+      delete: 'Удалить',
+      title: 'Наименование товара и описание',
+      quantity: 'Количество',
+      price: 'Цена'
+    }
+  },
+  cartItemNotifications: {
+    addedCartItem: 'Товар добавлен в корзину',
+    deletedCartItem: 'Товар удален из корзины'
   },
   common: {
     no: 'Нет',
@@ -36,5 +53,10 @@ export default {
     signIn: 'Войти',
     signUp: 'Зарегистрироваться',
     username: 'Логин'
+  },
+  status: {
+    error: 'Ошибка',
+    success: 'Успешно',
+    warning: 'Внимание'
   }
 }

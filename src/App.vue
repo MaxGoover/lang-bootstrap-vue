@@ -6,6 +6,12 @@
     <!--Контент-->
     <router-view/>
 
+    <notifications
+      classes="notification-error"
+      group="main"
+      position="bottom right"
+    />
+
     <!--Футер-->
     <app-footer v-if="false"/>
   </div>
@@ -30,5 +36,6 @@ export default {
 </script>
 
 <style>
-
+@import 'assets/App.css';
+@import 'assets/Notification.css';
 </style>

@@ -36,6 +36,11 @@ const routes = [
     component: () => import('../components/trainings/grammar/GrammarTraining.vue'),
     beforeEnter: authGuard
   },
+  {
+    path: '/shop',
+    name: 'Shop',
+    component: () => import('../views/Shop.vue')
+  },
   // {
   //   path: '/login',
   //   name: 'Login',

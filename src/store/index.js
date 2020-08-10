@@ -1,6 +1,7 @@
 import app from './modules/app/app'
 import authorization from './modules/auth/authorization'
 import grammar from './modules/training/grammar'
+import shop from './modules/shop/shop'
 import training from './modules/training/training'
 import user from './modules/user/user'
 import Vue from 'vue'
@@ -14,6 +15,7 @@ export default new Vuex.Store({
     app,
     authorization,
     grammar,
+    shop,
     training,
     user
   }
