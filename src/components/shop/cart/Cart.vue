@@ -51,7 +51,7 @@ export default {
     ...mapState('shop', ['cartItems'])
   },
   created () {
-    this.$store.dispatch('shop/getCart')
+    // this.$store.dispatch('shop/getCart')
   }
 }
 </script>

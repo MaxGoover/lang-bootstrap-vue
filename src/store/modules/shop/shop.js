@@ -72,8 +72,7 @@ export default {
      */
     setDollarRate (state, rate) {
       if (Number.isInteger(rate) && rate >= 20 && rate <= 80) {
-        state.dollarRate = rate.toFixed(2)
-        console.log(typeof state.dollarRate)
+        state.dollarRate = Number(rate.toFixed(2))
       }
     },
 
@@ -126,7 +125,7 @@ export default {
       axios.post('shop/cart/index')
         .then(
           response => {
-            console.log(1, response.data)
+            console.log('Get cart', response.data)
             // commit('setCart', response.data)
           },
           reject => {
@@ -150,6 +149,7 @@ export default {
         .then(
           response => {
             commit('setGroups', response.data)
+            console.log(response)
           },
           reject => {
             console.log(2, reject.response)

@@ -31,7 +31,7 @@
               v-if="goods.quantity === goods.inStock"
               class="LimitQuantity"
             >
-              Количество огранчено
+              Количество ограничено
             </div>
           </td>
           <td class="w-20">{{ goods.price }} / шт.</td>
