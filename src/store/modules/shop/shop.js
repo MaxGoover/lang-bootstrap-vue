@@ -7,6 +7,8 @@ export default {
   namespaced: true,
   state: {
     cartItems: [],
+    cartItemsCost: 0,
+    dollarRate: 70,
     groups: [],
     listAddedCartItems:{}
   },
@@ -23,6 +25,8 @@ export default {
     addCartItem (state, goods) {
       state.listAddedCartItems[goods.id] = true
       state.cartItems.push(new CartItem(goods))
+
+      // Показываем уведомление о добавлении товара в корзину
       const notification = new Notification('addedCartItem')
       notification.showSuccess()
     },
@@ -42,8 +46,35 @@ export default {
         }
       })
       state.cartItems.splice(index, 1)
+
+      // Показываем уведомление об удалении товара из корзины
       const notification = new Notification('deletedCartItem')
       notification.showWarning()
+    },
+
+    /**
+     * Изменить стоимость товаров в корзине.
+     * @param state
+     */
+    setCostCartItems (state) {
+      let cost = 0
+      state.cartItems.forEach(item => {
+        return cost += item.price * item.quantity
+      })
+      cost *= state.dollarRate
+      state.cartItemsCost = cost.toFixed(2)
+    },
+
+    /**
+     * Изменить курс доллара.
+     * @param state
+     * @param rate
+     */
+    setDollarRate (state, rate) {
+      if (Number.isInteger(rate) && rate >= 20 && rate <= 80) {
+        state.dollarRate = rate.toFixed(2)
+        console.log(typeof state.dollarRate)
+      }
     },
 
     /**
@@ -72,9 +103,21 @@ export default {
           return true
         }
       })
+
+
     }
   },
   actions: {
+    /**
+     * Удалить товар из корзины.
+     * @param commit
+     * @param goodsId
+     */
+    deleteCartItem ({ commit }, goodsId) {
+      commit('deleteCartItem', goodsId)
+      commit('setCostCartItems')
+    },
+
     /**
      * Получить корзину товаров.
      */
@@ -121,6 +164,7 @@ export default {
 
     /**
      * Добавить/удалить товар из корзины.
+     * Изменить стоимость товаров в корзине.
      * @param state
      * @param commit
      * @param goods
@@ -129,7 +173,30 @@ export default {
       state.listAddedCartItems[goods.id]
         ? commit('deleteCartItem', goods.id)
         : commit('addCartItem', goods)
+      commit('setCostCartItems')
+    },
 
+    /**
+     * Изменить курс доллара.
+     * Изменить стоимость товаров в корзине.
+     * @param commit
+     * @param rate
+     */
+    setDollarRate ({ commit }, rate) {
+      commit('setDollarRate', rate)
+      commit('setCostCartItems')
+    },
+
+    /**
+     * Изменить количество товара в корзине.
+     * Изменить стоимость товаров в корзине.
+     * @param state
+     * @param commit
+     * @param payload
+     */
+    setQuantityCartItem ({ commit }, payload) {
+      commit('setQuantityCartItem', payload)
+      commit('setCostCartItems')
     }
   }
 }

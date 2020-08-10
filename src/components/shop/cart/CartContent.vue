@@ -27,6 +27,12 @@
               :max="goods.inStock"
               @input="setQuantityCartItem(goods.id, ...arguments)"
             /> шт.
+            <div
+              v-if="goods.quantity === goods.inStock"
+              class="LimitQuantity"
+            >
+              Количество огранчено
+            </div>
           </td>
           <td class="w-20">{{ goods.price }} / шт.</td>
           <td class="w-10">
@@ -40,8 +46,29 @@
           </td>
         </tr>
         <tr>
-          <td class="text-muted float-right">Общая стоимость:
-            <span class="font-weight-bold"></span>
+          <td
+            class="text-muted w-75"
+            colspan="2"
+          >
+            <input
+              :value="dollarRate"
+              min="20"
+              max="80"
+              type="number"
+              @input="setDollarRate"
+            /> Стоимость доллара в рублях
+          </td>
+          <td
+            align="right"
+            class="text-muted w-25"
+            colspan="2"
+          >
+            Общая стоимость:
+            <span
+              class="font-weight-bold"
+              style="color: #b06006;"
+            >
+              {{ cartItemsCost }} руб.</span>
           </td>
         </tr>
       </tbody>
@@ -55,7 +82,11 @@ import { mapState } from 'vuex'
 export default {
   name: 'CartContent',
   computed: {
-    ...mapState('shop', ['cartItems'])
+    ...mapState('shop', [
+      'cartItems',
+      'cartItemsCost',
+      'dollarRate'
+    ])
   },
   data () {
     return {
@@ -69,12 +100,15 @@ export default {
   },
   methods: {
     deleteCartItem (goodsId) {
-      this.$store.commit('shop/deleteCartItem', goodsId)
+      this.$store.dispatch('shop/deleteCartItem', goodsId)
+    },
+    setDollarRate (event) {
+      this.$store.dispatch('shop/setDollarRate', Number(event.target.value))
     },
     setQuantityCartItem (goodsId, event) {
-      this.$store.commit('shop/setQuantityCartItem', {
+      this.$store.dispatch('shop/setQuantityCartItem', {
         goodsId,
-        quantity: event.target.value
+        quantity: Number(event.target.value)
       })
     }
   }

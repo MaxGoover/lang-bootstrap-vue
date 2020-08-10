@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="14bb7e73-18d6-41de-8209-e7b40ad97b8b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js_part/Task.txt" beforeDir="false" afterPath="$PROJECT_DIR$/js_part/Task.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/shop/CartContent.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/shop/CartContent.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/shop/cart/CartContent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shop/cart/CartContent.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Shop.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Shop.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/modules/shop/shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/modules/shop/shop.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,6 +176,7 @@
       <workItem from="1596967086784" duration="796000" />
       <workItem from="1596996002721" duration="9976000" />
       <workItem from="1597009966287" duration="7989000" />
+      <workItem from="1597047866141" duration="6683000" />
     </task>
     <task id="LOCAL-00001" summary="Init application">
       <created>1595362054297</created>
@@ -540,14 +541,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="Separated cart to components" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="311" y="58" width="800" height="677" key="#Inspections" timestamp="1596926435727">
+    <state x="311" y="58" width="800" height="677" key="#Inspections" timestamp="1597051172072">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="311" y="58" width="800" height="677" key="#Inspections/67.27.1299.741@67.27.1299.741" timestamp="1596926435727" />
-    <state x="186" y="27" width="988" height="741" key="CommitChangelistDialog2" timestamp="1597005395601">
+    <state x="311" y="58" width="800" height="677" key="#Inspections/67.27.1299.741@67.27.1299.741" timestamp="1597051172072" />
+    <state x="186" y="27" width="988" height="741" key="CommitChangelistDialog2" timestamp="1597018078678">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="186" y="27" width="988" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1597005395601" />
+    <state x="186" y="27" width="988" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1597018078678" />
     <state x="167" y="125" width="1099" height="543" key="DiffContextDialog" timestamp="1597017811402">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -564,10 +565,10 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="75" y="27" key="SettingsEditor/67.27.1299.741@67.27.1299.741" timestamp="1597002084008" />
-    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1597005398901">
+    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1597018081784">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1299.741@67.27.1299.741" timestamp="1597005398901" />
+    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1299.741@67.27.1299.741" timestamp="1597018081784" />
     <state x="362" y="132" width="709" height="528" key="find.popup" timestamp="1596996848388">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -580,9 +581,9 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="380" y="175" key="run.anything.popup/67.27.1299.741@67.27.1299.741" timestamp="1595604586631" />
-    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1597002125980">
+    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1597049972254">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup/67.27.1299.741@67.27.1299.741" timestamp="1597002125980" />
+    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup/67.27.1299.741@67.27.1299.741" timestamp="1597049972254" />
   </component>
 </project>
