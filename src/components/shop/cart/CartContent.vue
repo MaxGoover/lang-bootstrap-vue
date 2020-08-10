@@ -39,6 +39,11 @@
             </button>
           </td>
         </tr>
+        <tr>
+          <td class="text-muted float-right">Общая стоимость:
+            <span class="font-weight-bold"></span>
+          </td>
+        </tr>
       </tbody>
     </table>
   </b-container>

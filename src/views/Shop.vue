@@ -1,7 +1,10 @@
 <template>
   <div>
     <section>
+      <!--Задний фон-->
       <div class="Background"></div>
+
+      <!--Магазин-->
       <div class="container">
         <div class="row">
           <div class="d-none d-lg-block col-lg-2">
