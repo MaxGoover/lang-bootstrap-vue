@@ -25,7 +25,8 @@ export default {
   notifications: {
     addedCartItem: 'Товар добавлен в корзину',
     changedDollarRate: 'Стоимость доллара изменена',
-    deletedCartItem: 'Товар удален из корзины'
+    deletedCartItem: 'Товар удален из корзины',
+    wrongDollarRate: 'Курс доллара должен быть от 20 до 80'
   },
   common: {
     no: 'Нет',

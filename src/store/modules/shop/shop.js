@@ -73,12 +73,15 @@ export default {
      */
     setDollarRate (state, rate) {
       if (CommonHelper.isNumber(rate) && rate >= 20 && rate <= 80) {
-        state.dollarRate = Number(rate.toFixed(2))
+        state.dollarRate = CommonHelper.numberToFloat(rate)
 
         // Показываем уведомление об изменении стоимости доллара
         const notification = new Notification('changedDollarRate')
         notification.showSuccess()
       }
+      // Показываем уведомление об изменении стоимости доллара
+      const notification = new Notification('wrongDollarRate')
+      notification.showWarning()
     },
 
     /**

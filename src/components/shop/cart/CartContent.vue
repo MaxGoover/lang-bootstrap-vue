@@ -36,7 +36,7 @@
               Количество ограничено
             </div>
           </td>
-          <td class="w-20">{{ goods.price }} / шт.</td>
+          <td class="w-20">{{ calculateCost(goods.price) }} руб./ шт.</td>
           <td class="w-10">
             <button
               class="btn btn-light"
@@ -96,6 +96,7 @@
 
 <script>
 import { mapState } from 'vuex'
+import CommonHelper from '../../../helpers/CommonHelper'
 
 export default {
   name: 'CartContent',
@@ -118,6 +119,9 @@ export default {
     }
   },
   methods: {
+    calculateCost (price) {
+      return CommonHelper.numberToFloat(price * this.dollarRate)
+    },
     changeDollarRate () {
       this.showDollarRateInput = true
     },
