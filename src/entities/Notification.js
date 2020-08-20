@@ -8,7 +8,7 @@ export default class Notifications {
   type =''
 
   constructor (text) {
-    this.text = i18n.t('cartItemNotifications.' + text)
+    this.text = i18n.t('notifications.' + text)
   }
 
   showError() {

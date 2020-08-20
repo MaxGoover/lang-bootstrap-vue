@@ -1,5 +1,6 @@
 import { axios } from '../../../axios'
 import CartItem from '../../../entities/CartItem'
+import CommonHelper from '../../../helpers/CommonHelper'
 import Notification from '../../../entities/Notification'
 import Vue from 'vue'
 
@@ -8,7 +9,7 @@ export default {
   state: {
     cartItems: [],
     cartItemsCost: 0,
-    dollarRate: 70,
+    dollarRate: 70.33,
     groups: [],
     listAddedCartItems:{}
   },
@@ -71,8 +72,12 @@ export default {
      * @param rate
      */
     setDollarRate (state, rate) {
-      if (Number.isInteger(rate) && rate >= 20 && rate <= 80) {
+      if (CommonHelper.isNumber(rate) && rate >= 20 && rate <= 80) {
         state.dollarRate = Number(rate.toFixed(2))
+
+        // Показываем уведомление об изменении стоимости доллара
+        const notification = new Notification('changedDollarRate')
+        notification.showSuccess()
       }
     },
 
@@ -118,7 +123,7 @@ export default {
     },
 
     /**
-     * Получить корзину товаров.
+     * async Получить корзину товаров.
      */
     getCart () {
       this.commit('app/startLoading')
@@ -140,7 +145,7 @@ export default {
     },
 
     /**
-     * Получить все группы товаров.
+     * async Получить все группы товаров.
      * @param commit
      */
     getGroups ({ commit }) {

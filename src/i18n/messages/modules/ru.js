@@ -22,8 +22,9 @@ export default {
       price: 'Цена'
     }
   },
-  cartItemNotifications: {
+  notifications: {
     addedCartItem: 'Товар добавлен в корзину',
+    changedDollarRate: 'Стоимость доллара изменена',
     deletedCartItem: 'Товар удален из корзины'
   },
   common: {
