@@ -1,33 +1,30 @@
 import Vue from 'vue'
 import { i18n } from '../i18n/index'
 
-export default class Notifications {
+export default class Notification {
   group = 'main'
   text
   title
   type =''
 
-  constructor (text) {
-    this.text = i18n.t('notifications.' + text)
-  }
-
-  showError() {
-    this.setStatus('error')
+  showError(message) {
+    this.setStatus('error', message)
     Vue.notify(this)
   }
 
-  showSuccess() {
-    this.setStatus('success')
+  showSuccess(message) {
+    this.setStatus('success', message)
     Vue.notify(this)
   }
 
-  showWarning() {
-    this.setStatus('warning')
+  showWarning(message) {
+    this.setStatus('warning', message)
     Vue.notify(this)
   }
 
-  setStatus (status) {
+  setStatus (status, message) {
     this.title = i18n.t('status.' + status)
+    this.text = i18n.t('notifications.' + message)
     this.type = status
   }
 }

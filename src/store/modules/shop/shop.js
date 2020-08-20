@@ -28,8 +28,8 @@ export default {
       state.cartItems.push(new CartItem(goods))
 
       // Показываем уведомление о добавлении товара в корзину
-      const notification = new Notification('addedCartItem')
-      notification.showSuccess()
+      const notification = new Notification()
+      notification.showSuccess('addedCartItem')
     },
 
     /**
@@ -49,8 +49,8 @@ export default {
       state.cartItems.splice(index, 1)
 
       // Показываем уведомление об удалении товара из корзины
-      const notification = new Notification('deletedCartItem')
-      notification.showWarning()
+      const notification = new Notification()
+      notification.showWarning('deletedCartItem')
     },
 
     /**
@@ -72,16 +72,13 @@ export default {
      * @param rate
      */
     setDollarRate (state, rate) {
+      const notification = new Notification()
       if (CommonHelper.isNumber(rate) && rate >= 20 && rate <= 80) {
         state.dollarRate = CommonHelper.numberToFloat(rate)
-
-        // Показываем уведомление об изменении стоимости доллара
-        const notification = new Notification('changedDollarRate')
-        notification.showSuccess()
+        notification.showSuccess('changedDollarRate')
+      } else {
+        notification.showWarning('wrongDollarRate')
       }
-      // Показываем уведомление об изменении стоимости доллара
-      const notification = new Notification('wrongDollarRate')
-      notification.showWarning()
     },
 
     /**

@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14bb7e73-18d6-41de-8209-e7b40ad97b8b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/helpers/NotificationHelper.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/shop/cart/CartContent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shop/cart/CartContent.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers/CommonHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/CommonHelper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/i18n/messages/modules/ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/i18n/messages/modules/ru.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Notification.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Notification.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/modules/shop/shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/modules/shop/shop.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +75,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/helpers" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
@@ -84,19 +83,19 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/helpers" />
+      <recent name="$PROJECT_DIR$/src/entities" />
+      <recent name="$PROJECT_DIR$/src/store/modules/shop" />
+      <recent name="$PROJECT_DIR$/public/img" />
+      <recent name="$PROJECT_DIR$/public/img/icons" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/components/shop/cart" />
       <recent name="$PROJECT_DIR$/src/components/shop" />
       <recent name="$PROJECT_DIR$/src/components/app" />
       <recent name="$PROJECT_DIR$/src/components/app/appHeader" />
       <recent name="$PROJECT_DIR$/src/assets" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/entities" />
-      <recent name="$PROJECT_DIR$/src/helpers" />
-      <recent name="$PROJECT_DIR$/src/store/modules/shop" />
-      <recent name="$PROJECT_DIR$/public/img" />
-      <recent name="$PROJECT_DIR$/public/img/icons" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -185,7 +184,7 @@
       <workItem from="1597839034651" duration="714000" />
       <workItem from="1597877867793" duration="2089000" />
       <workItem from="1597912018852" duration="5753000" />
-      <workItem from="1597930963438" duration="4854000" />
+      <workItem from="1597930963438" duration="6540000" />
     </task>
     <task id="LOCAL-00001" summary="Init application">
       <created>1595362054297</created>
@@ -523,7 +522,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597943986778</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Added tip wrong dollarRate">
+      <created>1597945110442</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1597945110442</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -543,7 +549,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed footer text" />
     <MESSAGE value="Added menu items" />
     <MESSAGE value="Added Grammar" />
     <MESSAGE value="Added Grammar Trainings list item" />
@@ -568,17 +573,18 @@
     <MESSAGE value="Added limit quantity tip" />
     <MESSAGE value="Commented getCart temporally" />
     <MESSAGE value="Added float dollarRate" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added float dollarRate" />
+    <MESSAGE value="Added tip wrong dollarRate" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added tip wrong dollarRate" />
   </component>
   <component name="WindowStateProjectService">
     <state x="311" y="58" width="800" height="677" key="#Inspections" timestamp="1597051172072">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="311" y="58" width="800" height="677" key="#Inspections/67.27.1299.741@67.27.1299.741" timestamp="1597051172072" />
-    <state x="186" y="27" width="988" height="741" key="CommitChangelistDialog2" timestamp="1597943986337">
+    <state x="186" y="27" width="988" height="741" key="CommitChangelistDialog2" timestamp="1597946592665">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="186" y="27" width="988" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1597943986337" />
+    <state x="186" y="27" width="988" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1597946592665" />
     <state x="167" y="125" width="1099" height="543" key="DiffContextDialog" timestamp="1597922485458">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -595,10 +601,10 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="75" y="27" key="SettingsEditor/67.27.1299.741@67.27.1299.741" timestamp="1597002084008" />
-    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1597943990486">
+    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1597945113215">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1299.741@67.27.1299.741" timestamp="1597943990486" />
+    <state x="311" y="133" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1299.741@67.27.1299.741" timestamp="1597945113215" />
     <state x="362" y="132" width="709" height="528" key="find.popup" timestamp="1597914274788">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
