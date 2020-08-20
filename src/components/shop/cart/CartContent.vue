@@ -2,6 +2,7 @@
   <b-container>
     <table class="table mb-0">
 
+      <!--Шапка корзины-->
       <thead>
         <tr>
           <th
@@ -13,8 +14,9 @@
           </th>
         </tr>
       </thead>
-
       <tbody>
+
+        <!--Список товаров корзины-->
         <tr
           v-for="(goods, j) in cartItems"
           :key="j"
@@ -48,6 +50,7 @@
           </td>
         </tr>
         <tr>
+
           <!--Курс доллара-->
           <td class="text-muted w-75" colspan="2">
             Стоимость доллара в рублях:
@@ -64,12 +67,11 @@
 
             <template v-else>
               <input
-                ref="dollarRat"
+                ref="dollarRate"
                 :value="dollarRate"
                 class="Quantity"
                 tabindex="-1"
                 type="text"
-                :autofocus="showDollarRateInput"
                 @blur="setDollarRate"
               /> (от 20 до 80)
             </template>
@@ -124,6 +126,9 @@ export default {
     },
     changeDollarRate () {
       this.showDollarRateInput = true
+      this.$nextTick(function () {
+        this.$refs.dollarRate.focus()
+      })
     },
     deleteCartItem (goodsId) {
       this.$store.dispatch('shop/deleteCartItem', goodsId)
