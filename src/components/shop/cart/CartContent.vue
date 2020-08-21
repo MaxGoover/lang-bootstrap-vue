@@ -59,7 +59,7 @@
 
               <button
                 class="btn btn-outline-secondary ml-3 pt-0 pb-0"
-                @click="changeDollarRate"
+                @click="showChangeDollarRate"
               >
                 Изменить
               </button>
@@ -121,26 +121,51 @@ export default {
     }
   },
   methods: {
+    /**
+     * Считает стоимость товара.
+     * @param price
+     * @returns {number}
+     */
     calculateCost (price) {
       return CommonHelper.numberToFloat(price * this.dollarRate)
     },
-    changeDollarRate () {
-      this.showDollarRateInput = true
-      this.$nextTick(function () {
-        this.$refs.dollarRate.focus()
-      })
-    },
+
+    /**
+     * Удаляет товар из корзины.
+     * @param goodsId
+     */
     deleteCartItem (goodsId) {
       this.$store.dispatch('shop/deleteCartItem', goodsId)
     },
+
+    /**
+     * Меняет курс доллара.
+     * @param event
+     */
     setDollarRate (event) {
       this.showDollarRateInput = false
       this.$store.dispatch('shop/setDollarRate', Number(event.target.value))
     },
+
+    /**
+     * Меняет количество товара в корзине.
+     * @param goodsId
+     * @param event
+     */
     setQuantityCartItem (goodsId, event) {
       this.$store.dispatch('shop/setQuantityCartItem', {
         goodsId,
         quantity: Number(event.target.value)
+      })
+    },
+
+    /**
+     * Позволяет изменить курс доллара.
+     */
+    showChangeDollarRate () {
+      this.showDollarRateInput = true
+      this.$nextTick(function () {
+        this.$refs.dollarRate.focus()
       })
     }
   }
