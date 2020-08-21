@@ -22,9 +22,11 @@ export default {
       price: 'Цена'
     }
   },
-  cartItemNotifications: {
+  notifications: {
     addedCartItem: 'Товар добавлен в корзину',
-    deletedCartItem: 'Товар удален из корзины'
+    changedDollarRate: 'Стоимость доллара изменена',
+    deletedCartItem: 'Товар удален из корзины',
+    wrongDollarRate: 'Курс доллара должен быть от 20 до 80'
   },
   common: {
     no: 'Нет',

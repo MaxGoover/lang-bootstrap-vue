@@ -1,5 +1,6 @@
 import { axios } from '../../../axios'
 import CartItem from '../../../entities/CartItem'
+import CommonHelper from '../../../helpers/CommonHelper'
 import Notification from '../../../entities/Notification'
 import Vue from 'vue'
 
@@ -8,7 +9,7 @@ export default {
   state: {
     cartItems: [],
     cartItemsCost: 0,
-    dollarRate: 70,
+    dollarRate: 70.33,
     groups: [],
     listAddedCartItems:{}
   },
@@ -27,8 +28,8 @@ export default {
       state.cartItems.push(new CartItem(goods))
 
       // Показываем уведомление о добавлении товара в корзину
-      const notification = new Notification('addedCartItem')
-      notification.showSuccess()
+      const notification = new Notification()
+      notification.showSuccess('addedCartItem')
     },
 
     /**
@@ -48,8 +49,8 @@ export default {
       state.cartItems.splice(index, 1)
 
       // Показываем уведомление об удалении товара из корзины
-      const notification = new Notification('deletedCartItem')
-      notification.showWarning()
+      const notification = new Notification()
+      notification.showWarning('deletedCartItem')
     },
 
     /**
@@ -71,9 +72,12 @@ export default {
      * @param rate
      */
     setDollarRate (state, rate) {
-      if (Number.isInteger(rate) && rate >= 20 && rate <= 80) {
-        state.dollarRate = rate.toFixed(2)
-        console.log(typeof state.dollarRate)
+      const notification = new Notification()
+      if (CommonHelper.isNumber(rate) && rate >= 20 && rate <= 80) {
+        state.dollarRate = CommonHelper.numberToFloat(rate)
+        notification.showSuccess('changedDollarRate')
+      } else {
+        notification.showWarning('wrongDollarRate')
       }
     },
 
@@ -119,14 +123,14 @@ export default {
     },
 
     /**
-     * Получить корзину товаров.
+     * async Получить корзину товаров.
      */
     getCart () {
       this.commit('app/startLoading')
       axios.post('shop/cart/index')
         .then(
           response => {
-            console.log(1, response.data)
+            console.log('Get cart', response.data)
             // commit('setCart', response.data)
           },
           reject => {
@@ -141,7 +145,7 @@ export default {
     },
 
     /**
-     * Получить все группы товаров.
+     * async Получить все группы товаров.
      * @param commit
      */
     getGroups ({ commit }) {
@@ -150,6 +154,7 @@ export default {
         .then(
           response => {
             commit('setGroups', response.data)
+            console.log(response)
           },
           reject => {
             console.log(2, reject.response)
